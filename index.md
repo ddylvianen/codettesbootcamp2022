@@ -34,7 +34,7 @@ Everything from the chat app is stored in a div with a id of chatapp and a class
 
 #### Introduction to MQTT
 
-#### MQTT is a publish/subscribe protocol that allows edge-of-network devices to publish to a broker. Clients connect to this broker, which then mediates communication between the two devices. Each device can subscribe, or register, to particular topics.
+MQTT is a publish/subscribe protocol that allows edge-of-network devices to publish to a broker. Clients connect to this broker, which then mediates communication between the two devices. Each device can subscribe, or register, to particular topics.
 
 #### Introduction to javascript
 
