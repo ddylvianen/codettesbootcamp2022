@@ -98,9 +98,9 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It m
 
 If a message comes in this will check if its a ping(a call out for all online users), a pong( the answer to a pong with the name of the person in it)
 
-
-| try{ msgObj=JSON.parse(message.toString()); // t is JSON so handle it how u want // if message has Pin of Pong in it send it to the PingPongHandler if(Object.keys(msgObj)[0]=="ping") { sendPong("codettes2022","Dylan's Server","cb_12345678");}; if(Object.keys(msgObj)[0]=="pong") { handlePong(msgObj.pong);};// pong value is an object!! |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```apache hljs vditor-linenumber
+try{ msgObj=JSON.parse(message.toString()); // t is JSON so handle it how u want // if message has Pin of Pong in it send it to the PingPongHandler if(Object.keys(msgObj)[0]=="ping") { sendPong("codettes2022","Dylan's Server","cb_12345678");}; if(Object.keys(msgObj)[0]=="pong") { handlePong(msgObj.pong);};// pong value is an object!! 
+```
 
 The for loop checks if there is a : is the message that will help is separate the name of the user and the message from each other
 
@@ -124,10 +124,10 @@ console.log(i);
 ```
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
-
-varname=incomming.substr(0,place_name);
-
-varinmessage=incomming.substr(place_inmes,lengt);
+```apache hljs vditor-linenumber
+var name = incomming.substr(0,place_name);
+var inmessage = incomming.substr(place_inmes,lengt);
+```
 If the message is a welcome message it will be stored under a login key and send to be saved in a collection for login messages
 
 ```apache hljs vditor-linenumber
@@ -157,13 +157,14 @@ app.use('/',express.static(publicDirectoryPath))
 
 ### The final moment
 
-D id i or did i not waste my time?
+Did i or did i not waste my time?
 
 That is the golden question.
 
 anddd the answer is…………………………….
 
 YESSS it does
+
 
 Here the chatapp is hosted on the nodejs server
 
