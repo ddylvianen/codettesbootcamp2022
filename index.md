@@ -68,8 +68,6 @@ This handels all the pongs that the users send and extracts the username and the
 
 Here the userlist is updated if there if a new user that is not yet in the list
 
-```apache
-
 ### The final moment
 
 Did I or did I not waste my time?
@@ -79,7 +77,6 @@ That is the golden question.
 anddd the answer is…………………………….
 
 YESSS it does
-
 
 ## Building a nodejs local server
 
@@ -160,7 +157,7 @@ app.use('/',express.static(publicDirectoryPath))
 
 ### The final moment
 
-Did i or did i not waste my time?
+D id i or did i not waste my time?
 
 That is the golden question.
 
