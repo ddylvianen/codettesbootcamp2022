@@ -27,7 +27,7 @@ After that we started roughly coding where everything should be in the html file
 Everything from the chat app is stored in a div with a id of chatapp and a class of nothing (with a display of none). The class will later be changed by the login button
 
 ```apache hljs vditor-linenumber
-
+<div class="nothing" id="chatapp">
 ```
 
 ### Building the back-end of the chat app
@@ -48,7 +48,10 @@ A ping is a signal that is send by every user and when other users receive the p
 
 This lets the chat app only connect when a button is pressed and not on startup
 
-// app connect
+```apache hljs vditor-linenumber
+app = {
+  connection: function () {
+```
 
 sendMsg and sendmessage does the same thing
 
@@ -57,12 +60,52 @@ When they are called they get the username from the html page and publish the me
 If a message comes in it will be filtered for pings and pongs and if there is non of both it is displayed in the chatlog on the html page
 
 ```apache hljs vditor-linenumber
-
+function sendMsg(ele) {
+  if (event.key === 'Enter' && toggle == 0) {
+    var USER = document.getElementById('login').value;
+    var userName = USER;//document.getElementById("loginName").value; // || "anonymous user"
+    if (ele.value == "whoami") {
+      console.log(userName);
+      client.publish(mqttTopic, "Your name is " + userName + ", silly");
+    }
+    else if (ele.value == "disconnect") {
+      var t = document.getElementById("toggle");
+      console.log("disconnected user " + USER + " from topic " + mqttTopic)
+      t.value = "disconnected";
+      toggle = 1;
+      console.log("off")
+      console.log("disconnected")
+      client.subscribe("", { qos: 0 })
+    }
+    client.publish(mqttTopic, userName + " says: " + ele.value);
+    //alert(ele.value);
+    ele.value = ""; // reset the input after entering
+    // sendPing();
+  }
+}
 ```
 
 This handels all the pongs that the users send and extracts the username and the clientId
 
 ```apache hljs vditor-linenumber
+app = {
+    client.on('message', function (topic, message, packet) {
+      if (toggle == 0) {
+        msg = message.toString(); // library delivers  buffer so convert to strig first
+        console.log("onMessageArrived: " + msg);
+        // if it has JSON payload do NOT add to chat
+        try {
+          msgObj = JSON.parse(message.toString()); // t is JSON so handle it how u want
+          // if message has Pin of Pong in it send it to the PingPongHandler
+          if (Object.keys(msgObj)[0] == "ping") { sendPong(); };
+          if (Object.keys(msgObj)[0] == "pong") { handlePong(msgObj.pong); }; // pong value is an object!!
+          // other handlers for control messages below
+        } catch {
+          document.getElementById("chatlog").innerHTML += "<br>" + msg;
+          sendPing();
+        }
+      }
+    })
 
 ```
 
