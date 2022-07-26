@@ -142,28 +142,31 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It m
 If a message comes in this will check if its a ping(a call out for all online users), a pong( the answer to a pong with the name of the person in it)
 
 ```apache hljs vditor-linenumber
-try{ msgObj=JSON.parse(message.toString()); // t is JSON so handle it how u want // if message has Pin of Pong in it send it to the PingPongHandler if(Object.keys(msgObj)[0]=="ping") { sendPong("codettes2022","Dylan's Server","cb_12345678");}; if(Object.keys(msgObj)[0]=="pong") { handlePong(msgObj.pong);};// pong value is an object!! 
+try {
+    msgObj = JSON.parse(message.toString());
+ 
+    // t is JSON so handle it how u want
+    // if message has Pin of Pong in it send it to the PingPongHandler
+    if (Object.keys(msgObj)[0] == "ping") {
+      sendPong("codettes2022", "Dylan's Server", "cb_12345678");
+    };
+    if (Object.keys(msgObj)[0] == "pong") {
+      handlePong(msgObj.pong);
+    }; // pong value is an object!!
 ```
 
 The for loop checks if there is a : is the message that will help is separate the name of the user and the message from each other
 
 ```apache hljs vditor-linenumber
-for (vari=0;i<lengt;i++) {
-
-if (incomming[i] ==":") {
-
-varcom=i;
-
-varplace_name=i-5;
-
-varplace_inmes=i+2;
-
-varlogin=false;
-
-console.log(i);
-}
-
-}
+ for (var i = 0; i < lengt; i++) {
+      if (incomming[i] == ":") {
+        var com = i;
+        var place_name = i - 5;
+        var place_inmes = i + 2;
+        var login = false;
+        console.log(i);
+      }
+    }
 ```
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
@@ -174,19 +177,18 @@ var inmessage = incomming.substr(place_inmes,lengt);
 If the message is a welcome message it will be stored under a login key and send to be saved in a collection for login messages
 
 ```apache hljs vditor-linenumber
-if (inmessage==incomming) {varmyobj= {  login:inmessage, time:Date() };
-
-varcollection="login";
-
-}
+if (inmessage == incomming) {
+        var myobj = {  login: inmessage, time: Date() };
+        var collection = "login";
+      }
 ```
 
 If the message is not a welcome message the username, message and the time it was send will be stored under there separate keys and send to be saved in a collection for user messages
 
 ```apache hljs vditor-linenumber
 else{
-varmyobj= { name:name, message:inmessage, time:Date()};
-varcollection="messages";
+  varmyobj= { name:name, message:inmessage, time:Date()};
+  varcollection="messages";
     }
 ```
 
@@ -194,7 +196,6 @@ This hosts the chatapp so when someone goes to the link this will serve up the h
 
 ```apache hljs vditor-linenumber
 constpublicDirectoryPath=path.join(__dirname,'data')
-
 app.use('/',express.static(publicDirectoryPath))
 ```
 
@@ -208,6 +209,7 @@ anddd the answer is…………………………….
 
 YESSS it does
 
+![]()
 
 Here the chatapp is hosted on the nodejs server
 
