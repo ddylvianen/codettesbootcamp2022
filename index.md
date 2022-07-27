@@ -26,10 +26,6 @@ After that we started roughly coding where everything should be in the html file
 
 Everything from the chat app is stored in a div with a id of chatapp and a class of nothing (with a display of none). The class will later be changed by the login button
 
-```apache hljs vditor-linenumber
-<div class="nothing" id="chatapp">
-```
-
 ### Building the back-end of the chat app
 
 #### Introduction to MQTT
