@@ -44,15 +44,21 @@ A ping is a signal that is send by every user and when other users receive the p
 
 This lets the chat app only connect when a button is pressed and not on startup
 
+
+
 ```apache hljs vditor-linenumber
 app = {
   connection: function () {
   ```
+  
+  
 sendMsg and sendmessage does the same thing
 
 When they are called they get the username from the html page and publish the message that was typed by the user and then empty the input
 
 If a message comes in it will be filtered for pings and pongs and if there is non of both it is displayed in the chatlog on the html page
+
+
 
 ```apache hljs vditor-linenumber
 function sendMsg(ele) {
@@ -80,7 +86,11 @@ function sendMsg(ele) {
 }
 ```
 
+
+
 This handels all the pongs that the users send and extracts the username and the clientId
+
+
 
 ```apache hljs vditor-linenumber
 app = {
@@ -103,6 +113,8 @@ app = {
     })
 
 ```
+
+
 
 Here the userlist is updated if there if a new user that is not yet in the list
 
@@ -156,6 +168,8 @@ try {
 
 The for loop checks if there is a : is the message that will help is separate the name of the user and the message from each other
 
+
+
 ```apache hljs vditor-linenumber
  for (var i = 0; i < lengt; i++) {
       if (incomming[i] == ":") {
@@ -169,10 +183,14 @@ The for loop checks if there is a : is the message that will help is separate th
 ```
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
+
+
 ```apache hljs vditor-linenumber
 var name = incomming.substr(0,place_name);
 var inmessage = incomming.substr(place_inmes,lengt);
 ```
+
+
 If the message is a welcome message it will be stored under a login key and send to be saved in a collection for login messages
 
 ```apache hljs vditor-linenumber
@@ -182,7 +200,11 @@ if (inmessage == incomming) {
       }
 ```
 
+
+
 If the message is not a welcome message the username, message and the time it was send will be stored under there separate keys and send to be saved in a collection for user messages
+
+
 
 ```apache hljs vditor-linenumber
 else{
@@ -191,12 +213,18 @@ else{
     }
 ```
 
+
+
 This hosts the chatapp so when someone goes to the link this will serve up the html page and everything it needs
+
+
 
 ```apache hljs vditor-linenumber
 constpublicDirectoryPath=path.join(__dirname,'data')
 app.use('/',express.static(publicDirectoryPath))
 ```
+
+
 
 ### The final moment
 
