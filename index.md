@@ -45,8 +45,6 @@ A ping is a signal that is send by every user and when other users receive the p
 This lets the chat app only connect when a button is pressed and not on startup
 
 ```apache hljs vditor-linenumber
-```
-```
 app = {
   connection: function () {
   ```
