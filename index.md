@@ -47,8 +47,10 @@ This lets the chat app only connect when a button is pressed and not on startup
 
 
 ```apache hljs vditor-linenumber
+
 app = {
   connection: function () {
+  
   ```
   
   
