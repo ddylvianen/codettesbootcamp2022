@@ -44,7 +44,7 @@ A ping is a signal that is send by every user and when other users receive the p
 
 This lets the chat app only connect when a button is pressed and not on startup
 
-```javascript
+```apache
 app = {
 connection: function () {
 ```
@@ -55,7 +55,7 @@ When they are called they get the username from the html page and publish the me
 
 If a message comes in it will be filtered for pings and pongs and if there is non of both it is displayed in the chatlog on the html page
 
-```javascript
+```apache hljs vditor-linenumber
 function sendMsg(ele) {
   if (event.key === 'Enter' && toggle == 0) {
     var USER = document.getElementById('login').value;
@@ -83,7 +83,7 @@ function sendMsg(ele) {
 
 This handels all the pongs that the users send and extracts the username and the clientId
 
-```javascript
+```apache hljs vditor-linenumber
 app = {
     client.on('message', function (topic, message, packet) {
       if (toggle == 0) {
@@ -141,7 +141,7 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It m
 
 If a message comes in this will check if its a ping(a call out for all online users), a pong( the answer to a pong with the name of the person in it)
 
-```java
+```apache hljs vditor-linenumber
 try {
     msgObj = JSON.parse(message.toString());
  
@@ -157,7 +157,7 @@ try {
 
 The for loop checks if there is a : is the message that will help is separate the name of the user and the message from each other
 
-```javascript
+```apache hljs vditor-linenumber
  for (var i = 0; i < lengt; i++) {
       if (incomming[i] == ":") {
         var com = i;
@@ -171,14 +171,14 @@ The for loop checks if there is a : is the message that will help is separate th
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
 
-```javascript
+```apache hljs vditor-linenumber
 var name = incomming.substr(0,place_name);
 var inmessage = incomming.substr(place_inmes,lengt);
 ```
 
 If the message is a welcome message it will be stored under a login key and send to be saved in a collection for login messages
 
-```javascript
+```apache hljs vditor-linenumber
 if (inmessage == incomming) {
         var myobj = {  login: inmessage, time: Date() };
         var collection = "login";
@@ -187,7 +187,7 @@ if (inmessage == incomming) {
 
 If the message is not a welcome message the username, message and the time it was send will be stored under there separate keys and send to be saved in a collection for user messages
 
-```javascript
+```apache hljs vditor-linenumber
 else{
   varmyobj= { name:name, message:inmessage, time:Date()};
   varcollection="messages";
@@ -196,7 +196,7 @@ else{
 
 This hosts the chatapp so when someone goes to the link this will serve up the html page and everything it needs
 
-```javascript
+```apache hljs vditor-linenumber
 constpublicDirectoryPath=path.join(__dirname,'data')
 app.use('/',express.static(publicDirectoryPath))
 ```
@@ -320,41 +320,46 @@ a business model canvas can be split in 9 different parts
 
 and these are 
 
-#### 1. Key partners
+1. Key partners
 
 here you specify who you need as a partner to run you business. The less partners you have the better because then you have less people to pay
 
-#### 2. Key Activities
+2. Key Activities
 
 here you specify what processes or tasks need to be done to keep your business running
 
-#### 3. Key Resources
+3. Key Resources
 
 here you specify what resources you need for your key activities
 
-#### 4. Cost structure
+4. Cost structure
 
 here you specify all your costs to keep your business up and running(opperational expensis)
 
-#### 5. Value proppositions
+5. Value proppositions
 
 here you specify what kind of services or problem solvers your business has to ofer to the customer
 
-#### 6. Costomer relationships
+6. Costomer relationships
 
 here you specify what you have to over that can keep your costomers hooked to your business(what sets you out from the others)
 
-#### 7. Channels
+7. Channels
 
 here you specify how your business is going to bring there product or service to the costomers
 
-#### 8. Customer Segments
+8. Customer Segments
 
 here you specify your target audionce(the people who are mostly going to buy your product or service)
 
-#### 9. Revenue Streams
+9. Revenue Streams
 
 here you specify all your income streams(all the ways that your business earns monney)
+
+
+here is my business canvas
+
+![](businescanvas.png)
 
 ### Pitch deck/Poster
 
@@ -362,6 +367,13 @@ the pitch deck is used for presenting or giving people a quice look into what yo
 
 your pitch deck can have anything you want on it but it usualy has everything abput your project or business and it should attract people to your booth
 
+
+here is my pitch deck
+
+** instert when done **
+
 ### pitching
 
 when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
+
+there is my [powerpoint]("https://docs.google.com/presentation/d/12t8hK0dObHDi4-inl7LIgl4JUvSRfCgX/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true")
