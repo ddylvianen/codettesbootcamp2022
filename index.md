@@ -44,7 +44,7 @@ A ping is a signal that is send by every user and when other users receive the p
 
 This lets the chat app only connect when a button is pressed and not on startup
 
-```apache
+```javascript
 app = {
 connection: function () {
 ```
@@ -55,7 +55,7 @@ When they are called they get the username from the html page and publish the me
 
 If a message comes in it will be filtered for pings and pongs and if there is non of both it is displayed in the chatlog on the html page
 
-```apache hljs vditor-linenumber
+```apache
 function sendMsg(ele) {
   if (event.key === 'Enter' && toggle == 0) {
     var USER = document.getElementById('login').value;
@@ -83,7 +83,7 @@ function sendMsg(ele) {
 
 This handels all the pongs that the users send and extracts the username and the clientId
 
-```apache hljs vditor-linenumber
+```apache
 app = {
     client.on('message', function (topic, message, packet) {
       if (toggle == 0) {
@@ -141,7 +141,7 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It m
 
 If a message comes in this will check if its a ping(a call out for all online users), a pong( the answer to a pong with the name of the person in it)
 
-```apache hljs vditor-linenumber
+```apache
 try {
     msgObj = JSON.parse(message.toString());
  
@@ -171,14 +171,14 @@ The for loop checks if there is a : is the message that will help is separate th
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
 
-```apache hljs vditor-linenumber
+```apache
 var name = incomming.substr(0,place_name);
 var inmessage = incomming.substr(place_inmes,lengt);
 ```
 
 If the message is a welcome message it will be stored under a login key and send to be saved in a collection for login messages
 
-```apache hljs vditor-linenumber
+```apache
 if (inmessage == incomming) {
         var myobj = {  login: inmessage, time: Date() };
         var collection = "login";
@@ -187,7 +187,7 @@ if (inmessage == incomming) {
 
 If the message is not a welcome message the username, message and the time it was send will be stored under there separate keys and send to be saved in a collection for user messages
 
-```apache hljs vditor-linenumber
+```apache
 else{
   varmyobj= { name:name, message:inmessage, time:Date()};
   varcollection="messages";
@@ -196,7 +196,7 @@ else{
 
 This hosts the chatapp so when someone goes to the link this will serve up the html page and everything it needs
 
-```apache hljs vditor-linenumber
+```apache
 constpublicDirectoryPath=path.join(__dirname,'data')
 app.use('/',express.static(publicDirectoryPath))
 ```
