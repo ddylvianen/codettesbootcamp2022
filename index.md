@@ -360,4 +360,8 @@ here you specify all your income streams(all the ways that your business earns m
 
 the pitch deck is used for presenting or giving people a quice look into what your trying to do or doing
 
-your pitch deck can have anything you want on it but it usualy has
+your pitch deck can have anything you want on it but it usualy has everything abput your project or business and it should attract people to your booth
+
+### pitching
+
+when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
