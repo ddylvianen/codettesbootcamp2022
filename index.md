@@ -26,6 +26,10 @@ After that we started roughly coding where everything should be in the html file
 
 Everything from the chat app is stored in a div with a id of chatapp and a class of nothing (with a display of none). The class will later be changed by the login button
 
+```html
+<div class="nothing" id="chatapp">
+```
+
 ### Building the back-end of the chat app
 
 #### Introduction to MQTT
@@ -171,14 +175,14 @@ The for loop checks if there is a : is the message that will help is separate th
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
 
-```javascript
+```apache hljs vditor-linenumber
 var name = incomming.substr(0,place_name);
 var inmessage = incomming.substr(place_inmes,lengt);
 ```
 
 If the message is a welcome message it will be stored under a login key and send to be saved in a collection for login messages
 
-```apache hljs vditor-linenumber
+```javascript
 if (inmessage == incomming) {
         var myobj = {  login: inmessage, time: Date() };
         var collection = "login";
@@ -196,7 +200,7 @@ else{
 
 This hosts the chatapp so when someone goes to the link this will serve up the html page and everything it needs
 
-```javascript
+```apache hljs vditor-linenumber
 constpublicDirectoryPath=path.join(__dirname,'data')
 app.use('/',express.static(publicDirectoryPath))
 ```
