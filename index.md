@@ -361,7 +361,7 @@ here you specify your target audionce(the people who are mostly going to buy you
 here you specify all your income streams(all the ways that your business earns monney)
 
 
-here is my business canvas
+here is my [business canvas](https://next.canvanizer.com/canvas/rBCFJIdPN3Fyr)
 
 ![](businescanvas.png)
 
