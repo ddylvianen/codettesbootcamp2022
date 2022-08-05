@@ -324,39 +324,39 @@ a business model canvas can be split in 9 different parts
 
 and these are
 
-1. Key partners
+. Key partners
 
 here you specify who you need as a partner to run you business. The less partners you have the better because then you have less people to pay
 
-2.  Key Activities
+.  Key Activities
 
 here you specify what processes or tasks need to be done to keep your business running
 
-3.  Key Resources
+.  Key Resources
 
 here you specify what resources you need for your key activities
 
-4.  Cost structure
+.  Cost structure
 
 here you specify all your costs to keep your business up and running(opperational expensis)
 
-5.  Value proppositions
+.  Value proppositions
 
 here you specify what kind of services or problem solvers your business has to ofer to the customer
 
-6. Costomer relationships
+. Costomer relationships
 
 here you specify what you have to over that can keep your costomers hooked to your business(what sets you out from the others)
 
-7.  Channels
+.  Channels
 
 here you specify how your business is going to bring there product or service to the costomers
 
-8. Customer Segments
+. Customer Segments
 
 here you specify your target audionce(the people who are mostly going to buy your product or service)
 
-9. Revenue Streams
+. Revenue Streams
 
 here you specify all your income streams(all the ways that your business earns monney)
 
