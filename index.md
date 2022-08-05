@@ -175,7 +175,7 @@ The for loop checks if there is a : is the message that will help is separate th
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
 
-```apache hljs vditor-linenumber
+```javascript
 var name = incomming.substr(0,place_name);
 var inmessage = incomming.substr(place_inmes,lengt);
 ```
@@ -200,7 +200,7 @@ else{
 
 This hosts the chatapp so when someone goes to the link this will serve up the html page and everything it needs
 
-```apache hljs vditor-linenumber
+```javascript
 constpublicDirectoryPath=path.join(__dirname,'data')
 app.use('/',express.static(publicDirectoryPath))
 ```
