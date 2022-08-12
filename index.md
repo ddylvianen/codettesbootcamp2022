@@ -233,8 +233,6 @@ Here the user messages can be seen saved in mongoDB
 
 ![](https://lh5.googleusercontent.com/L-KeHX91pxZsUcjqAnQpc8saMoEJGHRu6KC1N0XcP0fo8XvmrRUDKkNbgjq_Ig-789CuS_k48YhQ2RPj4C5KMNM7NO_Wgryec0Nnm8apSUHbpqPv4unN2XbHOoVfpPwvOk9GnFM-nxLMSHl1_r_1Q8o)
 
-
-
 ## 3D printing
 
 #### Introduction to 3D printing
@@ -305,7 +303,6 @@ And then i sliced it and saved it as a Gcode
 
 ![](https://lh4.googleusercontent.com/j513_dHTVsv2Vcz65Z_DTTufI__Ndrb4p_GcRD9LVcerKh4TmyGhWLJ7Um0JaBKKrdNN7bcn62P0FRHL2ZReTxR-I8UF6kY4iMAj0fXW5lQE04_8LnvNcCWk5FHTyBw9VDyfU59sfoxgejvbRKmyPQ)
 
-
 ## Busines model canvas
 
 #### introduction to Business Model Canvas
@@ -360,7 +357,6 @@ here you specify your target audionce(the people who are mostly going to buy you
 
 here you specify all your income streams(all the ways that your business earns monney)
 
-
 here is my [business canvas](https://next.canvanizer.com/canvas/rBCFJIdPN3Fyr)
 
 ![](businescanvas.png)
@@ -371,7 +367,6 @@ the pitch deck is used for presenting or giving people a quice look into what yo
 
 your pitch deck can have anything you want on it but it usualy has everything abput your project or business and it should attract people to your booth
 
-
 here is my pitch deck
 
 ** instert when done **
@@ -381,3 +376,87 @@ here is my pitch deck
 when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
 
 there is my [powerpoint](https://docs.google.com/presentation/d/12t8hK0dObHDi4-inl7LIgl4JUvSRfCgX/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true)
+
+
+
+# 2d and 3d designing
+
+### Installing freecad
+
+I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled down till i saw this  And then i pressed on the 2.0 windows 64 bit version and waited for the download to finish
+
+![](https://lh3.googleusercontent.com/Bc1lUjh6T5TMyFO1FUMgJiF9hJWcHO9JWbXFkNkQ8yJFws6EUxQW6k8c3FhTBvWAKhjMq0XYHAnkYOH9SW32L497LcsLefmpA04PEJaloXF453Tv2zl0EXHievSxitJDKS4kec9O0oZj1FYjsYUegUw)
+
+After it was done i open the installer and went through the steps![](https://lh4.googleusercontent.com/Y7N10hY4rs_f9GyKkD4tOv2Av6R2Uj9i5dqH1DPj-IMJkyq28I77_1VRMfrGYGHPMEQdUxf4yPVVXliPYIF3PZBQIm3hCvI93nQaZB1sUoeuVAGY5NnNV6xNGkpzBy2B2LsmIS6ch0thmk6XtnvCr8w)
+
+## Making a basic 3d shape
+
+After it was done installing i opened freecad and made a new file, after that i pressed on the section toggle and pressed on part design
+
+![](https://lh6.googleusercontent.com/opjf49Phna_OdPh1gkqWXvylAsBClha2PfUd4BU62Z5836BO6ko4kZCrHmqSqW5r0OBnm6k52l3fF-BmaOU_KqkWMPHX-hZDPN5Bu-ShHUJ_qPuRcA12hjplm8LKG0_tPFuuM93E9etiXX5zfj2pwW0)
+
+After that i made a new sketch
+
+![](https://lh3.googleusercontent.com/NkwJP10bpw_t-W7vS3ijqS5MN9JJZ_XpdmcN3dqdDsa5eNgPI6KtN6kITlY-Tjfmh4spMxptXtJ3s5zoI3Z5rHdi5K6vcOt4BL4fEDi_KCUMSKL4i1juoYTovubmC48F6WcRI8e8_sVf4ITsKh7GgQk)
+
+Where i choose the xy_plane
+
+![](https://lh5.googleusercontent.com/RWJqxXFj50Vt9ih2WDABkqN-MsE-fShDWoQl0UM3C0Gm7M_vp31LGDoJdk4OV9HHWNoBSIAsg0mNib7tdw6Ie3NZYb5J8tYsOZwWDjiM-hkpPTufsTUo_sXk3zTUIehKWW_TaJgGbfzdd-Vst1faARw)
+
+And here i made a basic block
+
+![](https://lh3.googleusercontent.com/_hEhjjDy6UuL0_i8ePXj9x_nOWF5hHdPQ30v1_5TUb6PnYw4HsJpazwlXyDRWiTV69JqB8a9ouDk1rbJrGYXa2ncXohoX6m24IsaKk-EVrFSF51kEqQUZB_jZ-CZbvWRHcNZbaDnN1J8u5qrVegZoRg)
+
+![](https://lh4.googleusercontent.com/e7S5EBSTuiz6Ce7bBwaeaBTq2L8n4k6XoY2yTOVARVLCOU1F2DbrzLlrrJ--L_Dg5LZ7M6IOXgNseDd1tHOlK5INNJ9IbkBcfmSvONIYEQ_jhEDfNMxBhzxX_1xvOZFXOD2yZyX2SF5z3Un-FZQcZJU)
+
+Then i choose constrain for horizontal and vertical
+
+![](https://lh3.googleusercontent.com/fFQoLQ1DW9EOk5l5BNSHq1m4o9nh0BHuBHW3alGeyo7thB-llcVES-fdz3S9KC1Cr4BldqJVVRi7CSvviXYBbkMSB_tz-NVs3eQdjiu__qK9JQmQzi-cVapLtVLTsKMNk030410fFyM0ep3c4XflARE)
+
+And i set them both to 100mm
+
+![](https://lh5.googleusercontent.com/goSIqPdViWPVONHFU2BZZisid8JxWj9UPPQSl61DyGL97-rtPcHy2XGsMvfFaCG2T3ePXw8tV8v5dAont9g8ucbzqO2Zj8yi1KGkWdfEHlhN1EBwVuDNezdZUyQB1tBYFqqGQZmayA3p7tRfrFl_RVc)
+
+![](https://lh6.googleusercontent.com/tJdDDtwOFNEToHQeWDGlW5vD2CosPEXzztTj-4nI_mWfhxYuQSBy3oKQgWpR-6xlgJGMkK62Ubbhx_g8HrisPkBMvNMnTrTRFRf2keDRnMGhtU9ddARvSLg9amGNku5rpaUT43SPtoyNBb2K5S53WZc)
+
+And then you get this basic square
+
+![](https://lh6.googleusercontent.com/yZzyCnUCPcFibQtR7bnukRpawY5my7E7-LjHVVnKHnr51ScvRi8A6l44m5_0A4t9Gubp3iWSbwRRCyh25Of0O-BgU3888Sgcb7t858f2Bm6b3qrmSxVAxhZ_v-GA1DQfV85VjiDvgZds-qSY955dzb0)
+
+When you have a square you press on Pad(that will make it a 3d schape)
+
+![](https://lh6.googleusercontent.com/PACvLTHOoVKKBdCno-dNJNcx8gwkj6hqmVSkvlpBBC42ARuCSkVpuIzxaunqFX1W3Nc9sn7qD_UCKVQPbEVfzuPQZ52vn9S03ZRsUmA7qqaaDjlu1v2LM017YKb0rRjAFHXV5tWi8kFQl_gGR8iXKUI)
+
+And i set the dimension to 10mm
+
+![](https://lh3.googleusercontent.com/IYgV9BSpV6UZRUBwL4LGZzUVrjlNsN0DwKgQ4WOHmpuFfffGhvHx3HBTX8jB4Ya-Zm3nncJ1acUlbmpP-RLedUw1T4N8q0TROkIeTDP73HZAgryZYbUp27nSDBEuI0dLIAWqGBRztmDMrD5G10Cr9jk)
+
+And when you do that you get this 3d shape
+
+![](https://lh6.googleusercontent.com/sJQbnaBkijvy21G-nu-HUsEE6FkgTgn_nEoeZeCRywIV9ESyGBe5LCZDFZ2Z46_6oWznbu4kbt8JOuJRir10vUPgjs2EmMDguQxgy9T1PDJ3dW9iIlDqlW1apOUQbp1tfTroFv2qKQXdfMV4ceEh3sE)
+
+### Making a pocket in the basic 3d shape
+
+I made a new schape in the XY_Plain
+
+![](https://lh4.googleusercontent.com/bmfMHC2eLMFxwcnCUZUqdlSE2GkuzCasEhBQWNjMhggUVF89lLU6OuB-HXR-0PjZUL5zgMW5NJTWvfzN9bQG9UYmSF3uZL2TqlXRVmK8CWIXtZ-HD4BEA9gtqd184QOlQNQhroKj_ONjHAmBnT3_ae4)
+
+And pressed on create circle
+
+![](https://lh6.googleusercontent.com/ETYxK0i0NQlUkkiFOuwI5S404i5o9Ezc04L0mPcs3a3n4ZarBdL7LD-BeAMTiD-OtPjsQxKXF7wLmeUY-_pT0Xvw0bOjWXfz9hxPGP_P10vJurz3rbOvsMRQA6sPzR8H9hSfp154o-nIu8HhtqGC9rw)
+
+And added s circle on the 3d shape
+
+![](https://lh6.googleusercontent.com/HqEkycLgtEf3vwBo8hdyVoHWAUBjg1Dn45dtpnCM1CeBxYr_oLFEEtu6RI8tJanVMyBwUDXuPOEa7zXlATXBMX0WJpIzerMTyPwINBtHT-3ToTcVm-j0hUr90C2kA5U44E5y-RX_s14zbwaBV_XSRVo)
+
+After that i pressed on pocket
+
+![](https://lh5.googleusercontent.com/OampRAa71IZrDhpH83jFPHeGFsaoKrAbAYtYEWj72wA55pd01WcjWgs2XaUBsfQqyiEkhQ_J66Hi66fDJSyJj5HmMv-m8nkhJ2h-AMf6x993WaPZfI2-nzEDJP2bLk0ZTR-YbzorooJh5f3sY3A-apE)
+
+And checked symmetric to plane or reversed
+
+![](https://lh3.googleusercontent.com/wK4cpOfZsfOC3nOOooHLVPDk_DmG8zN-Asxm1iquUhdBFJws0zIeBS0PT80SPn2pgxdE_vBEFh2X_4yiLehiEW8orvpLR0HJR6CVqMup6gZQzbmN7Nr97XVaz0Pkkw-n-cWREWMZL5k4oC7bdh22tQs)
+
+And the you schoul have a hole!!
+
+![img](https://lh5.googleusercontent.com/3PF_-xSnT-AOm_OUdfzIhhVsseVmoRgnFrbXnTC1_JFT1VaBAOhUrG3CouGlkn3RECkBThMQQrkkT6cYr1gxF6bIlSEsMAL3bldM-yiwTCd3qpl3PTAbUEP4KuZC1HSGY3I0GMxPC1XtZenNp5xAuMo)
