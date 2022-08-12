@@ -457,6 +457,6 @@ And checked symmetric to plane or reversed
 
 ![](https://lh3.googleusercontent.com/wK4cpOfZsfOC3nOOooHLVPDk_DmG8zN-Asxm1iquUhdBFJws0zIeBS0PT80SPn2pgxdE_vBEFh2X_4yiLehiEW8orvpLR0HJR6CVqMup6gZQzbmN7Nr97XVaz0Pkkw-n-cWREWMZL5k4oC7bdh22tQs)
 
-And the you schoul have a hole!!
+And the you schoul have a pocket!!
 
 ![img](https://lh5.googleusercontent.com/3PF_-xSnT-AOm_OUdfzIhhVsseVmoRgnFrbXnTC1_JFT1VaBAOhUrG3CouGlkn3RECkBThMQQrkkT6cYr1gxF6bIlSEsMAL3bldM-yiwTCd3qpl3PTAbUEP4KuZC1HSGY3I0GMxPC1XtZenNp5xAuMo)
