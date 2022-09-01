@@ -1,6 +1,6 @@
 # Welcome to Dylan Vianen's Documentation
 
-## Setup Dev Environment for ESP32 S2
+# Setup Dev Environment for ESP32 S2
 
 First i downloaded the Arduino IDE from the [website](https://docs.arduino.cc/)
 
@@ -267,9 +267,9 @@ This was my first sketch of the Visionary glove it showed the build lay-up of on
 
 And this is the final version of my sketch
 
-![](https://lh6.googleusercontent.com/NJRFQVPBg6MVtyvtYE0eFyyZoCIgmmQUoJvsESvDswL_8aEScWil1afzlducznwReMp8d34QFvZSuRnE7FcePAKa8tSZGrvVtM_pJ7JxPjo28ObsLexw9dsxDZ0UChGoFqPD2YbIpsKTA_z21jJJznQ)
+![img](https://lh6.googleusercontent.com/NJRFQVPBg6MVtyvtYE0eFyyZoCIgmmQUoJvsESvDswL_8aEScWil1afzlducznwReMp8d34QFvZSuRnE7FcePAKa8tSZGrvVtM_pJ7JxPjo28ObsLexw9dsxDZ0UChGoFqPD2YbIpsKTA_z21jJJznQ)
 
-## 3D printing
+# 3D printing
 
 #### Introduction to 3D printing
 
@@ -337,9 +337,9 @@ In cura i opened the stl file that i made in tinkercad
 
 And then i sliced it and saved it as a Gcode
 
-![img](https://lh4.googleusercontent.com/j513_dHTVsv2Vcz65Z_DTTufI__Ndrb4p_GcRD9LVcerKh4TmyGhWLJ7Um0JaBKKrdNN7bcn62P0FRHL2ZReTxR-I8UF6kY4iMAj0fXW5lQE04_8LnvNcCWk5FHTyBw9VDyfU59sfoxgejvbRKmyPQ) 
+![img](https://lh4.googleusercontent.com/j513_dHTVsv2Vcz65Z_DTTufI__Ndrb4p_GcRD9LVcerKh4TmyGhWLJ7Um0JaBKKrdNN7bcn62P0FRHL2ZReTxR-I8UF6kY4iMAj0fXW5lQE04_8LnvNcCWk5FHTyBw9VDyfU59sfoxgejvbRKmyPQ)
 
-## Working with freecad
+# Working with freecad
 
 ### Installing freecad
 
@@ -347,9 +347,11 @@ I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled 
 
 ![](https://lh4.googleusercontent.com/jQYVJEVfDY3oZ1Wwpfcof49svi8Fh-ikgqNqXZssJ2M8oQAKKubzkOUZh3N_z9z9LETnDYSuNszgkpSC29fAmjMj6ZAP3YxUeuyxA24HGZVyVWYJyoj-bYjnecAKlRVi3CNubrrgYuw3cB_AvF1MD04)
 
-After it was done i open the installer and went through the steps![](https://lh5.googleusercontent.com/wVxtaTAM4td2INSfEzGIGkeOKqV4g0rqQJ5vENa9z1fZfSDAeGE_m0eJ3EYveUXsAbELoJlb_WgCrDaXC5-K9zOEMmHs_4fTeWps5Gp5bUaKqBqTgagOfuaR2srxmYEEetf5UCGRkBM0k3SeM_uAa3g)
+After it was done i open the installer and went through the steps![img](https://lh5.googleusercontent.com/wVxtaTAM4td2INSfEzGIGkeOKqV4g0rqQJ5vENa9z1fZfSDAeGE_m0eJ3EYveUXsAbELoJlb_WgCrDaXC5-K9zOEMmHs_4fTeWps5Gp5bUaKqBqTgagOfuaR2srxmYEEetf5UCGRkBM0k3SeM_uAa3g)
 
-## Making a basic 3d shape
+
+
+### Making a basic 3d shape
 
 After it was done installing i opened freecad and made a new file, after that i pressed on the section toggle and pressed on part design
 
@@ -421,81 +423,7 @@ And the you schoul have a hole!!
 
 ![img](https://lh5.googleusercontent.com/shvI_u8BJhX8l78i3FBtuQxchgEHsxa8C-hLmOgv5Dczk4kZzSv0rE7NHWXEc8Yk9BnJYa-VM3b6hfHNaBrgW-uUUT28jcuCkXntiqDLdv5vn2zGqIwspo_akwiJ4orja3GwTd9gMgJPhZbOFISXXuA)
 
-## Busines model canvas
-
-#### introduction to Business Model Canvas
-
-The Business Model Canvas is a strategic management template used for developing new business models and documenting existing ones. It offers a visual chart with elements describing a firm's or product's value propositio, infrastructure, customers, and finances, assisting businesses to align their activities by illustrating potential trade-offs.
-
-A business model canvas is basicely a business plan(Plan for successful operation of a business or startup that identifies Sources of Revenue and Target Customer Base combined with details of Financing) oversite in one page.
-
-a business model canvas is good for pitching,  its Customer Focused,  Easy for Presenting and many more
-
-Canvas were initially proposed in 2005 by Alexander Osterwalder
-
-### The parts of a business model canvas
-
-a business model canvas can be split in 9 different parts
-
-and these are
-
-. Key partners
-
-here you specify who you need as a partner to run you business. The less partners you have the better because then you have less people to pay
-
-.  Key Activities
-
-here you specify what processes or tasks need to be done to keep your business running
-
-.  Key Resources
-
-here you specify what resources you need for your key activities
-
-.  Cost structure
-
-here you specify all your costs to keep your business up and running(opperational expensis)
-
-.  Value proppositions
-
-here you specify what kind of services or problem solvers your business has to ofer to the customer
-
-. Costomer relationships
-
-here you specify what you have to over that can keep your costomers hooked to your business(what sets you out from the others)
-
-.  Channels
-
-here you specify how your business is going to bring there product or service to the costomers
-
-. Customer Segments
-
-here you specify your target audionce(the people who are mostly going to buy your product or service)
-
-. Revenue Streams
-
-here you specify all your income streams(all the ways that your business earns monney)
-
-here is my [business canvas](https://next.canvanizer.com/canvas/rBCFJIdPN3Fyr)
-
-![](businescanvas.png)
-
-### Pitch deck/Poster
-
-the pitch deck is used for presenting or giving people a quice look into what your trying to do or doing
-
-your pitch deck can have anything you want on it but it usualy has everything abput your project or business and it should attract people to your booth
-
-here is my pitch deck
-
-** instert when done **
-
-### pitching
-
-when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
-
-there is my [powerpoint](https://docs.google.com/presentation/d/12t8hK0dObHDi4-inl7LIgl4JUvSRfCgX/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true)
-
-# 2d and 3d designing
+## 2d and 3d designing
 
 ### Installing freecad
 
@@ -503,9 +431,9 @@ I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled 
 
 ![](https://lh3.googleusercontent.com/Bc1lUjh6T5TMyFO1FUMgJiF9hJWcHO9JWbXFkNkQ8yJFws6EUxQW6k8c3FhTBvWAKhjMq0XYHAnkYOH9SW32L497LcsLefmpA04PEJaloXF453Tv2zl0EXHievSxitJDKS4kec9O0oZj1FYjsYUegUw)
 
-After it was done i open the installer and went through the steps![](https://lh4.googleusercontent.com/Y7N10hY4rs_f9GyKkD4tOv2Av6R2Uj9i5dqH1DPj-IMJkyq28I77_1VRMfrGYGHPMEQdUxf4yPVVXliPYIF3PZBQIm3hCvI93nQaZB1sUoeuVAGY5NnNV6xNGkpzBy2B2LsmIS6ch0thmk6XtnvCr8w)
+After it was done i open the installer and went through the steps![img](https://lh4.googleusercontent.com/Y7N10hY4rs_f9GyKkD4tOv2Av6R2Uj9i5dqH1DPj-IMJkyq28I77_1VRMfrGYGHPMEQdUxf4yPVVXliPYIF3PZBQIm3hCvI93nQaZB1sUoeuVAGY5NnNV6xNGkpzBy2B2LsmIS6ch0thmk6XtnvCr8w)
 
-## Making a basic 3d shape
+#### Making a basic 3d shape
 
 After it was done installing i opened freecad and made a new file, after that i pressed on the section toggle and pressed on part design
 
@@ -577,7 +505,6 @@ And the you schoul have a pocket!!
 
 ![img](https://lh5.googleusercontent.com/3PF_-xSnT-AOm_OUdfzIhhVsseVmoRgnFrbXnTC1_JFT1VaBAOhUrG3CouGlkn3RECkBThMQQrkkT6cYr1gxF6bIlSEsMAL3bldM-yiwTCd3qpl3PTAbUEP4KuZC1HSGY3I0GMxPC1XtZenNp5xAuMo)
 
-
 # CNC
 
 #### introduction to CNC
@@ -585,7 +512,6 @@ And the you schoul have a pocket!!
 Computer numerical control (CNC) is  **a method for automating control of machine tools through the use of software embedded in a microcomputer attached to the tool** . It is commonly used in manufacturing for machining metal and plastic parts.
 
 ## making the Gcode of the freecadshape
-
 
 **First we create a job
 
@@ -688,3 +614,78 @@ And it should look like this
 ![](https://lh5.googleusercontent.com/aN_NQPasIOXCI8MDaieTiTzf5tACp2wL4yr8hf6ZLg3S7JtZv5yJaygc0YSG9zLxX8vhvCQQLBqu_eCy8WamHNgox9lwfG4MSlRxQ1_A-3Hft_tOKeb-I-t8oNizzkzHsyCddf1fpxj8t5vbK1MfZac)
 
 ![img](https://lh5.googleusercontent.com/m5grUCVFSJk6rnqFfpw4SoLN2yjhaIw-2jyCg_uMLha6IPuD2_Wu7l_CGeTK04gReuT0GmFS2ynFq2Sd5w4W1HItI-GMUyGGmtpGsmMoN-LDXrWuLXsdwaewU0NRjx2TS-MIg-TNiGQ9jFR91l38U_I)
+
+
+# Busines model canvas
+
+#### introduction to Business Model Canvas
+
+The Business Model Canvas is a strategic management template used for developing new business models and documenting existing ones. It offers a visual chart with elements describing a firm's or product's value propositio, infrastructure, customers, and finances, assisting businesses to align their activities by illustrating potential trade-offs.
+
+A business model canvas is basicely a business plan(Plan for successful operation of a business or startup that identifies Sources of Revenue and Target Customer Base combined with details of Financing) oversite in one page.
+
+a business model canvas is good for pitching,  its Customer Focused,  Easy for Presenting and many more
+
+Canvas were initially proposed in 2005 by Alexander Osterwalder
+
+### The parts of a business model canvas
+
+a business model canvas can be split in 9 different parts
+
+and these are
+
+. Key partners
+
+here you specify who you need as a partner to run you business. The less partners you have the better because then you have less people to pay
+
+.  Key Activities
+
+here you specify what processes or tasks need to be done to keep your business running
+
+.  Key Resources
+
+here you specify what resources you need for your key activities
+
+.  Cost structure
+
+here you specify all your costs to keep your business up and running(opperational expensis)
+
+.  Value proppositions
+
+here you specify what kind of services or problem solvers your business has to ofer to the customer
+
+. Costomer relationships
+
+here you specify what you have to over that can keep your costomers hooked to your business(what sets you out from the others)
+
+.  Channels
+
+here you specify how your business is going to bring there product or service to the costomers
+
+. Customer Segments
+
+here you specify your target audionce(the people who are mostly going to buy your product or service)
+
+. Revenue Streams
+
+here you specify all your income streams(all the ways that your business earns monney)
+
+here is my [business canvas](https://next.canvanizer.com/canvas/rBCFJIdPN3Fyr)
+
+![](businescanvas.png)
+
+### Pitch deck/Poster
+
+the pitch deck is used for presenting or giving people a quice look into what your trying to do or doing
+
+your pitch deck can have anything you want on it but it usualy has everything abput your project or business and it should attract people to your booth
+
+here is my pitch deck
+
+** instert when done **
+
+### pitching
+
+when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
+
+there is my [powerpoint](https://docs.google.com/presentation/d/12t8hK0dObHDi4-inl7LIgl4JUvSRfCgX/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true)
