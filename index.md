@@ -1,6 +1,6 @@
 # Welcome to Dylan Vianen's Documentation
 
-# Setup Dev Environment for ESP32 S2
+## Setup Dev Environment for ESP32 S2
 
 First i downloaded the Arduino IDE from the [website](https://docs.arduino.cc/)
 
@@ -26,19 +26,19 @@ And i unzipped it in the sketchbook location
 
 And thats it!
 
-## Build HTML5 Chat app
+### Build HTML5 Chat app
 
 So the idea is to make a chat app that communicates with other users via MQTT
 
-#### Introduction to HTML5
+##### Introduction to HTML5
 
 HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.
 
-#### Introduction to CSS
+##### Introduction to CSS
 
 CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.
 
-### Building the front-end
+#### Building the front-end
 
 For the front-end we started with just a sketch on a piece of paper for how we want our chat app to look like.
 
@@ -48,7 +48,7 @@ Here’s mine
 
 After that we started roughly coding where everything should be in the html file
 
-#### Explanation of the code
+##### Explanation of the code
 
 Everything from the chat app is stored in a div with a id of chatapp and a class of nothing (with a display of none). The class will later be changed by the login button
 
@@ -56,21 +56,21 @@ Everything from the chat app is stored in a div with a id of chatapp and a class
 <div class="nothing" id="chatapp">
 ```
 
-### Building the back-end of the chat app
+#### Building the back-end of the chat app
 
-#### Introduction to MQTT
+##### Introduction to MQTT
 
 MQTT is a publish/subscribe protocol that allows edge-of-network devices to publish to a broker. Clients connect to this broker, which then mediates communication between the two devices. Each device can subscribe, or register, to particular topics.
 
-#### Introduction to javascript
+##### Introduction to javascript
 
 JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
 
-#### The ping and pong concept
+##### The ping and pong concept
 
 A ping is a signal that is send by every user and when other users receive the ping they send a pong with their username and clientId
 
-#### Explaining the code
+##### Explaining the code
 
 This lets the chat app only connect when a button is pressed and not on startup
 
@@ -137,7 +137,7 @@ app = {
 
 Here the userlist is updated if there if a new user that is not yet in the list
 
-### The final moment
+#### The final moment
 
 Did I or did I not waste my time?
 
@@ -151,23 +151,23 @@ here is the login page of the webapp
 and here is the mainpage of the webapp
 ![img](mainpage.png)
 
-## Building a nodejs local server
+### Building a nodejs local server
 
 The idea is to build a local nodejs server to host the chat app and store every incoming message in mongodb
 
-#### Introduction to nodejs
+##### Introduction to nodejs
 
 Node.js is an open source server environment. Node.js is free. Node. js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.) Node.js uses JavaScript on the server.
 
-#### Introduction to mongodb
+##### Introduction to mongodb
 
 MongoDB is a non-relational document database that provides support for JSON-like storage. The MongoDB database has a flexible data model that enables you to store unstructured data, and it provides full indexing support, and replication with rich and intuitive APIs.
 
-#### Introduction to mongoose
+##### Introduction to mongoose
 
 Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
 
-### Explaining of the code
+#### Explaining of the code
 
 If a message comes in this will check if its a ping(a call out for all online users), a pong( the answer to a pong with the name of the person in it)
 
@@ -231,7 +231,7 @@ constpublicDirectoryPath=path.join(__dirname,'data')
 app.use('/',express.static(publicDirectoryPath))
 ```
 
-### The final moment
+#### The final moment
 
 Did i or did i not waste my time?
 
@@ -259,13 +259,13 @@ Here the user messages can be seen saved in mongoDB
 
 ![img](https://lh5.googleusercontent.com/L-KeHX91pxZsUcjqAnQpc8saMoEJGHRu6KC1N0XcP0fo8XvmrRUDKkNbgjq_Ig-789CuS_k48YhQ2RPj4C5KMNM7NO_Wgryec0Nnm8apSUHbpqPv4unN2XbHOoVfpPwvOk9GnFM-nxLMSHl1_r_1Q8o)
 
-### code and referencis
+#### code and referencis
 
 the link to the [site](https://ddylvianen.github.io/) and to the [code](https://github.com/ddylvianen/ddylvianen.github.io)
 
 
 
-## Build UI mockups for your FInal Project and HTML Layout
+### Build UI mockups for your FInal Project and HTML Layout
 
 This was my first sketch of the Visionary glove it showed the build lay-up of one of the gloves
 
@@ -276,19 +276,19 @@ And this is the final version of my sketch
 ![img](https://lh6.googleusercontent.com/NJRFQVPBg6MVtyvtYE0eFyyZoCIgmmQUoJvsESvDswL_8aEScWil1afzlducznwReMp8d34QFvZSuRnE7FcePAKa8tSZGrvVtM_pJ7JxPjo28ObsLexw9dsxDZ0UChGoFqPD2YbIpsKTA_z21jJJznQ)
 
 
-# 3D printing
+## 3D printing
 
-#### Introduction to 3D printing
+##### Introduction to 3D printing
 
 3D printing, also known as additive manufacturing, is a method of creating a three dimensional object layer-by-layer using a computer created design. 3D printing is an additive process whereby layers of material are built up to create a 3D part.
 
-#### Introduction to 3d printing filaments
+##### Introduction to 3d printing filaments
 
 The most used filaments are PLA and ABS
 
 PLA and ABS are both thermoplastics. PLA is stronger and stiffer than ABS, but poor heat-resistance properties means PLA is mostly a hobbyist material. ABS is weaker and less rigid, but also tougher and lighter, making it a better plastic for prototyping applications.
 
-### Installing cura and setting up the printer
+#### Installing cura and setting up the printer
 
 I opened the setup wizard and followed the steps
 
@@ -304,7 +304,7 @@ And then i searched for the anycubic predator because we are using that
 
 ![](https://lh5.googleusercontent.com/SnIxv4Qy_zRTsO0w6sw6kTOarMkS2ZhU3_wjp1QuiepKbDkMRhYQxc7jtPFEdYiwZ2ukAsvx7tmJM---EVutxYdbLfArwWLG_k-yZiw4oVouooaAbQT-84Z0a112xLCf7BqiIZv__pP7x-0XqOu4RA)
 
-### Setting up the cura parameters
+#### Setting up the cura parameters
 
 Most of the time you can pick one of these profiles
 
@@ -324,7 +324,7 @@ Material: the printing temp has to be on 190C and the build plate temp has to be
 
 ![](https://lh3.googleusercontent.com/RcCDrCjDDUL7L1qD031ZzInjBelz1mMoc5k9KoqpEjaz-Qnsq9yQctE8JYPJOS6joUtM2k9nwkUwO8Ocks1Jps-c0PliZhar--cuc-XDwIMPKZd4VzBbJj_cY5bg_6BVKlo9Kbm9g1496ZQyLxka_BI)
 
-### Creating a 3D model for printing with tinkercad
+#### Creating a 3D model for printing with tinkercad
 
 First i open tinkercad and just dragged a random object
 
@@ -334,7 +334,7 @@ And then i exported it as an stl file to use later in cura
 
 ![](https://lh6.googleusercontent.com/p3wD9EDBvxBN0uv1NJEXRFcTh8gGGLSvw9dZ90wCllU3Zu6q3Bu2B2uv4UYiNg4cE8Z9I34IeviE3KFium5s23cuiTrrBKjfS6-3WkvmOF7ZwfnVtONg2mJW_9RSxcDEOVNCVCXL_tURgpjN0ikAbg)
 
-### Making the Gcode
+#### Making the Gcode
 
 In cura i opened the stl file that i made in tinkercad
 
@@ -346,13 +346,13 @@ And then i sliced it and saved it as a Gcode
 
 ![img](https://lh4.googleusercontent.com/j513_dHTVsv2Vcz65Z_DTTufI__Ndrb4p_GcRD9LVcerKh4TmyGhWLJ7Um0JaBKKrdNN7bcn62P0FRHL2ZReTxR-I8UF6kY4iMAj0fXW5lQE04_8LnvNcCWk5FHTyBw9VDyfU59sfoxgejvbRKmyPQ)
 
-# Working with freecad
+## Working with freecad
 
-#### introduction to freecad
+##### introduction to freecad
 
 FreeCAD is  **an open-source parametric 3D modeler made primarily to design real-life objects of any size** . Parametric modeling allows you to easily modify your design by going back into your model history and changing its parameters.
 
-### Installing freecad
+#### Installing freecad
 
 I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled down till i saw this  And then i pressed on the 2.0 windows 64 bit version and waited for the download to finish
 
@@ -360,7 +360,7 @@ I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled 
 
 After it was done i open the installer and went through the steps![img](https://lh5.googleusercontent.com/wVxtaTAM4td2INSfEzGIGkeOKqV4g0rqQJ5vENa9z1fZfSDAeGE_m0eJ3EYveUXsAbELoJlb_WgCrDaXC5-K9zOEMmHs_4fTeWps5Gp5bUaKqBqTgagOfuaR2srxmYEEetf5UCGRkBM0k3SeM_uAa3g)
 
-### Making a basic 3d shape
+#### Making a basic 3d shape
 
 After it was done installing i opened freecad and made a new file, after that i pressed on the section toggle and pressed on part design
 
@@ -406,7 +406,7 @@ And when you do that you get this 3d shape
 
 ![](https://lh5.googleusercontent.com/1lguysUqI-8H9Ezhp6S7ElySErtP07yiMenDu_9y95CFiQUROtNH15jmNimRZBlU_4vWZpAqSo19fmMBCx61p5gBji4cpvS1EFDv-k0gdZwD200nPmY9dBVTPEnSyrHmO9ZpYuVxUtS97Bq1h0tEX4Q)
 
-### Making a pocket in the basic 3d shape
+#### Making a pocket in the basic 3d shape
 
 I made a new schape in the XY_Plain
 
@@ -432,9 +432,9 @@ And the you schoul have a hole!!
 
 ![img](https://lh5.googleusercontent.com/shvI_u8BJhX8l78i3FBtuQxchgEHsxa8C-hLmOgv5Dczk4kZzSv0rE7NHWXEc8Yk9BnJYa-VM3b6hfHNaBrgW-uUUT28jcuCkXntiqDLdv5vn2zGqIwspo_akwiJ4orja3GwTd9gMgJPhZbOFISXXuA)
 
-## 2d and 3d designing
+### 2d and 3d designing
 
-### Installing freecad
+#### Installing freecad
 
 I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled down till i saw this  And then i pressed on the 2.0 windows 64 bit version and waited for the download to finish
 
@@ -442,7 +442,7 @@ I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled 
 
 After it was done i open the installer and went through the steps![img](https://lh4.googleusercontent.com/Y7N10hY4rs_f9GyKkD4tOv2Av6R2Uj9i5dqH1DPj-IMJkyq28I77_1VRMfrGYGHPMEQdUxf4yPVVXliPYIF3PZBQIm3hCvI93nQaZB1sUoeuVAGY5NnNV6xNGkpzBy2B2LsmIS6ch0thmk6XtnvCr8w)
 
-#### Making a basic 3d shape
+##### Making a basic 3d shape
 
 After it was done installing i opened freecad and made a new file, after that i pressed on the section toggle and pressed on part design
 
@@ -488,7 +488,7 @@ And when you do that you get this 3d shape
 
 ![](https://lh6.googleusercontent.com/sJQbnaBkijvy21G-nu-HUsEE6FkgTgn_nEoeZeCRywIV9ESyGBe5LCZDFZ2Z46_6oWznbu4kbt8JOuJRir10vUPgjs2EmMDguQxgy9T1PDJ3dW9iIlDqlW1apOUQbp1tfTroFv2qKQXdfMV4ceEh3sE)
 
-### Making a pocket in the basic 3d shape
+#### Making a pocket in the basic 3d shape
 
 I made a new schape in the XY_Plain
 
@@ -514,15 +514,15 @@ And the you schoul have a pocket!!
 
 ![img](https://lh5.googleusercontent.com/3PF_-xSnT-AOm_OUdfzIhhVsseVmoRgnFrbXnTC1_JFT1VaBAOhUrG3CouGlkn3RECkBThMQQrkkT6cYr1gxF6bIlSEsMAL3bldM-yiwTCd3qpl3PTAbUEP4KuZC1HSGY3I0GMxPC1XtZenNp5xAuMo)
 
-# CNC
+## CNC
 
-#### introduction to CNC
+##### introduction to CNC
 
 Computer numerical control (CNC) is  **a method for automating control of machine tools through the use of software embedded in a microcomputer attached to the tool** . It is commonly used in manufacturing for machining metal and plastic parts.
 
-## making the Gcode of the freecadshape
+### making the Gcode of the freecadshape
 
-**First we create a job
+First we create a job
 
 ![](https://lh3.googleusercontent.com/O3fQp-8zoI6WVtHebBIkA5y9qABDe1mdKlq_HEAE5O0J4jrCYhb3LbTx-ns8WLQeEBrbfzKa1dI4PvcblOSNPbutk66XTOTC6eXMheB3eJdGOBZJesYil8yQ0gETaXyLwoNs_yJU6bqeU90tnZmaklE)
 
@@ -624,9 +624,9 @@ And it should look like this
 
 ![img](https://lh5.googleusercontent.com/m5grUCVFSJk6rnqFfpw4SoLN2yjhaIw-2jyCg_uMLha6IPuD2_Wu7l_CGeTK04gReuT0GmFS2ynFq2Sd5w4W1HItI-GMUyGGmtpGsmMoN-LDXrWuLXsdwaewU0NRjx2TS-MIg-TNiGQ9jFR91l38U_I)
 
-# Busines model canvas
+## Busines model canvas
 
-#### introduction to Business Model Canvas
+##### introduction to Business Model Canvas
 
 The Business Model Canvas is a strategic management template used for developing new business models and documenting existing ones. It offers a visual chart with elements describing a firm's or product's value propositio, infrastructure, customers, and finances, assisting businesses to align their activities by illustrating potential trade-offs.
 
@@ -636,7 +636,7 @@ a business model canvas is good for pitching,  its Customer Focused,  Easy for P
 
 Canvas were initially proposed in 2005 by Alexander Osterwalder
 
-### The parts of a business model canvas
+#### The parts of a business model canvas
 
 a business model canvas can be split in 9 different parts
 
@@ -682,7 +682,7 @@ here is my [business canvas](https://next.canvanizer.com/canvas/rBCFJIdPN3Fyr)
 
 ![](businescanvas.png)
 
-### Pitch deck/Poster
+#### Pitch deck/Poster
 
 the pitch deck is used for presenting or giving people a quice look into what your trying to do or doing
 
@@ -692,7 +692,7 @@ here is my pitch deck
 
 ** instert when done **
 
-### pitching
+#### pitching
 
 when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
 
