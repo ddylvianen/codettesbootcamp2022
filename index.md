@@ -263,8 +263,6 @@ Here the user messages can be seen saved in mongoDB
 
 the link to the [site](https://ddylvianen.github.io/) and to the [code](https://github.com/ddylvianen/ddylvianen.github.io)
 
-
-
 ### Build UI mockups for your FInal Project and HTML Layout
 
 This was my first sketch of the Visionary glove it showed the build lay-up of one of the gloves
@@ -274,7 +272,6 @@ This was my first sketch of the Visionary glove it showed the build lay-up of on
 And this is the final version of my sketch
 
 ![img](https://lh6.googleusercontent.com/NJRFQVPBg6MVtyvtYE0eFyyZoCIgmmQUoJvsESvDswL_8aEScWil1afzlducznwReMp8d34QFvZSuRnE7FcePAKa8tSZGrvVtM_pJ7JxPjo28ObsLexw9dsxDZ0UChGoFqPD2YbIpsKTA_z21jJJznQ)
-
 
 ## 3D printing
 
@@ -434,15 +431,7 @@ And the you schoul have a hole!!
 
 ### 2d and 3d designing
 
-#### Installing freecad
-
-I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled down till i saw this  And then i pressed on the 2.0 windows 64 bit version and waited for the download to finish
-
-![](https://lh3.googleusercontent.com/Bc1lUjh6T5TMyFO1FUMgJiF9hJWcHO9JWbXFkNkQ8yJFws6EUxQW6k8c3FhTBvWAKhjMq0XYHAnkYOH9SW32L497LcsLefmpA04PEJaloXF453Tv2zl0EXHievSxitJDKS4kec9O0oZj1FYjsYUegUw)
-
-After it was done i open the installer and went through the steps![img](https://lh4.googleusercontent.com/Y7N10hY4rs_f9GyKkD4tOv2Av6R2Uj9i5dqH1DPj-IMJkyq28I77_1VRMfrGYGHPMEQdUxf4yPVVXliPYIF3PZBQIm3hCvI93nQaZB1sUoeuVAGY5NnNV6xNGkpzBy2B2LsmIS6ch0thmk6XtnvCr8w)
-
-##### Making a basic 3d shape
+#### Making a basic 3d shape
 
 After it was done installing i opened freecad and made a new file, after that i pressed on the section toggle and pressed on part design
 
