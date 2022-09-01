@@ -1,5 +1,31 @@
 # Welcome to Dylan Vianen's Documentation
 
+## Setup Dev Environment for ESP32 S2
+
+First i downloaded the Arduino IDE from the [website](https://docs.arduino.cc/)
+
+![](https://lh6.googleusercontent.com/Uyyg45dXsrwT2kp47vUTU0-Los7nU2lLdbPpBYXEHDvsUPKlQsOhyYSdgymKPy-C1ohuQV-Ck96mbSu6W_asYdafrwtxPAsAfqDLS2tiDMEOKPSVrIgZAAtOqccQLOFFig8y51O0aBwWzQhd86_Yigk)
+
+ And waited until the download was done and opened the file and went through the steps for the installation.
+
+![](https://lh5.googleusercontent.com/zug7R1QXY0HkudPOXpNX_kqfrttyKaEudnFUUSmk5J8raL8dUOk7JAdoVuSG5z8DtAqWIWMaQ8ObfcjL6LSOTkUD7ZA0XytVz1wj8he6h0aqImrjR-uCNTbjbKAjjcuTFdZKsXkne0qPMtEuICPbWDU)
+
+After that i open the IDE and opened the preferences
+
+![](https://lh6.googleusercontent.com/QliM-ZB5c7FoSKOTtsz51tbskDPUHRepnOYXKoItLdOSrBk28Q_7X2cJpBEtQibXrfbohw_zS14ExXXlPD4BpB30jpFFs9yr4YRwRk1ulRk1N7Z-8xki9t7Ow-l5yOotmLIdlOk9xnvV2e0k_CFrh7w)
+
+And added the link for [esp32 devices](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html#installing-using-arduino-ide) on arduino IDE
+
+![](https://lh4.googleusercontent.com/P2-QWK1cpFHfuHSwHDQnsvl24oQow-thzkBC1S0GyiO31wXn8JkowSSAyxVKCe_swWk0h0mbTXWLznHKp9p3y4ckMoSadaQzyOlaHe9y-basiIHVGS7g90xQndcV7bHgNRbnwWvz6zh4JfSXUxeW02o)
+
+After that i downloaded [spiffs for the ESP32-s2](https://github.com/me-no-dev/arduino-esp32fs-plugin)
+
+![](https://lh4.googleusercontent.com/IOmO2s0Y9ZPBgrtQRF-vquXWfpsFO8JYKCYTx1fzb2FwNFnCioKPBzaELruLF7Tu1CAgz_PCVbEEg90MxsFZquRnysPHrGxJ6gODk4GE1LUjwSCrqATlusFZZMcfhUqasT86q9y51jzDBd9DqDI3MZo)
+
+And i unzipped it in the sketchbook location
+
+And thats it!
+
 ## Build HTML5 Chat app
 
 So the idea is to make a chat app that communicates with other users via MQTT
@@ -233,6 +259,16 @@ Here the user messages can be seen saved in mongoDB
 
 ![](https://lh5.googleusercontent.com/L-KeHX91pxZsUcjqAnQpc8saMoEJGHRu6KC1N0XcP0fo8XvmrRUDKkNbgjq_Ig-789CuS_k48YhQ2RPj4C5KMNM7NO_Wgryec0Nnm8apSUHbpqPv4unN2XbHOoVfpPwvOk9GnFM-nxLMSHl1_r_1Q8o)
 
+## Build UI mockups for your FInal Project and HTML Layout
+
+This was my first sketch of the Visionary glove it showed the build lay-up of one of the gloves
+
+![](https://lh6.googleusercontent.com/s0MGZxhn1ryPchSU3NozqyXI1YhqB0z_bNVnZodddBLKwuW33rNXkA3U08maIy_UEZE50Um4bElpoXjtaxCU0hnVOhgLCnEC9ex3pjahpWDU7Kr5Yau1pZ0VGG7DRbw6pbw49-os5q9PtQmkSwrlK_Q)
+
+And this is the final version of my sketch
+
+![](https://lh6.googleusercontent.com/NJRFQVPBg6MVtyvtYE0eFyyZoCIgmmQUoJvsESvDswL_8aEScWil1afzlducznwReMp8d34QFvZSuRnE7FcePAKa8tSZGrvVtM_pJ7JxPjo28ObsLexw9dsxDZ0UChGoFqPD2YbIpsKTA_z21jJJznQ)
+
 ## 3D printing
 
 #### Introduction to 3D printing
@@ -301,7 +337,89 @@ In cura i opened the stl file that i made in tinkercad
 
 And then i sliced it and saved it as a Gcode
 
-![](https://lh4.googleusercontent.com/j513_dHTVsv2Vcz65Z_DTTufI__Ndrb4p_GcRD9LVcerKh4TmyGhWLJ7Um0JaBKKrdNN7bcn62P0FRHL2ZReTxR-I8UF6kY4iMAj0fXW5lQE04_8LnvNcCWk5FHTyBw9VDyfU59sfoxgejvbRKmyPQ)
+![img](https://lh4.googleusercontent.com/j513_dHTVsv2Vcz65Z_DTTufI__Ndrb4p_GcRD9LVcerKh4TmyGhWLJ7Um0JaBKKrdNN7bcn62P0FRHL2ZReTxR-I8UF6kY4iMAj0fXW5lQE04_8LnvNcCWk5FHTyBw9VDyfU59sfoxgejvbRKmyPQ) 
+
+## Working with freecad
+
+### Installing freecad
+
+I went to [this](https://github.com/FreeCAD/FreeCAD/releases) site and scrolled down till i saw this  And then i pressed on the 2.0 windows 64 bit version and waited for the download to finish
+
+![](https://lh4.googleusercontent.com/jQYVJEVfDY3oZ1Wwpfcof49svi8Fh-ikgqNqXZssJ2M8oQAKKubzkOUZh3N_z9z9LETnDYSuNszgkpSC29fAmjMj6ZAP3YxUeuyxA24HGZVyVWYJyoj-bYjnecAKlRVi3CNubrrgYuw3cB_AvF1MD04)
+
+After it was done i open the installer and went through the steps![](https://lh5.googleusercontent.com/wVxtaTAM4td2INSfEzGIGkeOKqV4g0rqQJ5vENa9z1fZfSDAeGE_m0eJ3EYveUXsAbELoJlb_WgCrDaXC5-K9zOEMmHs_4fTeWps5Gp5bUaKqBqTgagOfuaR2srxmYEEetf5UCGRkBM0k3SeM_uAa3g)
+
+## Making a basic 3d shape
+
+After it was done installing i opened freecad and made a new file, after that i pressed on the section toggle and pressed on part design
+
+![](https://lh3.googleusercontent.com/0zliLIFOFSrzWqW5ImyC6UcFjv1UXVSSq20vAOZlF70clK3fgdNCr9FO_RP93Edk8wMaV15dW-SWFQlpLaogOl1ZJEPNPccRr8qoQzsJ-5ZglR4KVo2MKsLpLEC9DCsUUyxggEO0AAW-kJO-1Os3lK0)
+
+After that i made a new sketch
+
+![](https://lh4.googleusercontent.com/R5rECutk97Bdfacy7Exm9eKoxRhkxYHDye60sstTT5lrzla5M8WBXccYXNbQFGr2fkgZb2iQVWU6Cy8neAaq2Db194AvdcxpA6funwkoB88z2vqrlGr7tuNbw4cXfuSWlSPMG8FMK9So8z2tynCOw34)
+
+Where i choose the xy_plane
+
+![](https://lh6.googleusercontent.com/KXJAxzAQ4xPqSQXVKE92g89oD0K54GQhj0gNgBX1RGl-_JVsNXazHPVxDqr9bie8RUHV3TsxLDsr1mmXW7WtRX5_0OB9slC9MmTeTS0NoQ8arf2XjF_0LLkCTQDk0IeXcstJPlqB3gBffAAhXQ6_Zs8)
+
+And here i made a basic block
+
+![](https://lh6.googleusercontent.com/gVf_fV1NHAIz_2NBvnWdDCbP5J_vk5k_2Qh2QIgaO86_8bUFb8kSpaycpF_VIJ2tEwN3Dv2SsTFCs_2mUAKS1ixehSgPI01GDV8dqqaet3_PO6v9aQsVEAqocU7oic24l166d0Y0jrxWMTH118KwlnU)
+
+![](https://lh6.googleusercontent.com/uf7OR6m0f1CztWbE-TI_oypU71aKVObWB1_Ith_l63KJmCx-7pUBJ2HSrdmIs8EE2iKM2vWk2sanPcpCg6mijDkPict4OMBW3lHXzrnFffN5D28M3PFN0VyJsk4NCOcm5YYQ77Wi53V0C85nAQFamrY)
+
+Then i choose constrain for horizontal and vertical
+
+![](https://lh3.googleusercontent.com/jgvT3ftSwO7y4j5FmSN20-Lzs2EX8mU79_hKqpTElGtXAFNUCdLVFo-9EslBrN_4-uvfl9vChExpfOFNNMqfTqvtMssHyPAto9VkN8_kFNySv-_0oOvUpqmbAFGoRol4q2CuIMbBJvJ7DBTbnWLzCYA)
+
+And i set them both to 100mm
+
+![](https://lh5.googleusercontent.com/7-U3RkokNNYpJwpz0WfAOSiaHy2IjOWPuRouVR8zDoDvw9NJsBB7EnG0gN16K2ppnWftlRcExyofvhnnQC1JnedextME2l5n08LnWJ4t0AOckG2vm6Opw5KwZHDa7d1ZwVZ2FkB4w9F5-lRcEp7B6mo)
+
+![](https://lh6.googleusercontent.com/Q-HFLQ2-6o62Z3d8NyrWYESD_aZgyc08QLYqTERqy7BSsZNFwa9IRZgwqavkK2vaDP9mkTxB6IrxzrsoSae4TRmqAuHbaQvu91s9LcmrxYYGucrugnmY4KUT_9bbqzPWYLXu6Q0agMFTGmxKPoVSalc)
+
+And then you get this basic square
+
+![](https://lh4.googleusercontent.com/tAwPrSILvkE7dOsZcpdXzcs0JR_2dridVn0lkI52JBz43NR40J-eAoPHMf8j5bW5L5ktTdTbRp2vxjNY3Kz80-tTsF2ChziawOK88U5EfamIKDF5XrvbC8yKSArHhdi2J4ItQVXrCnJZBUlgiAg6DjI)
+
+When you have a square you press on Pad(that will make it a 3d schape)
+
+![](https://lh6.googleusercontent.com/sdcyFrQ_ByPXRx6c2EWVYTUs4S3t0dfDw0-QCeEtz5XB5QgWH8DctgdMITKDdzgj4dvNlHeBRNJiLle7ig-muJoA5yPRvUuDEdlTmtCNd8VXIYcHrGRseE86HRYiWq4Mrq_yjEaqGewa4teozeuno9U)
+
+And i set the dimension to 10mm
+
+![](https://lh4.googleusercontent.com/5GFprBneiB3j9MaerzZFD8iQz2iR9hCO4WCNs_gyrx5D_ZUfoqp2wMSe5206KOjKO4xjHPlAlQU7FBqdEmUVUYuW-1WKX4ki4rmRMx0Wz5uf-v4GoBtPepPNWkx4oqBw6CRqjfjRmtVExw_du3ZgVoU)
+
+And when you do that you get this 3d shape
+
+![](https://lh5.googleusercontent.com/1lguysUqI-8H9Ezhp6S7ElySErtP07yiMenDu_9y95CFiQUROtNH15jmNimRZBlU_4vWZpAqSo19fmMBCx61p5gBji4cpvS1EFDv-k0gdZwD200nPmY9dBVTPEnSyrHmO9ZpYuVxUtS97Bq1h0tEX4Q)
+
+### Making a pocket in the basic 3d shape
+
+I made a new schape in the XY_Plain
+
+![](https://lh3.googleusercontent.com/spTdeBKj2TwQERQwnalBKTJjTY4NNhMu0elGCOb_1vUVCYNA2JENM9qNYQPFXGJPMckAnygleh_TGMZxzTkHsPbAU4hxeLcSbVnZuNHaYLo-Povq5N8hiLItJHoWF_Im7QAVQdfbwgSls1_EJun-DSs)
+
+And pressed on create circle
+
+![](https://lh3.googleusercontent.com/7ZqbCf7_LEEaPVeKJLsOtYPYk-hihPFcBVl_IYyhoENuzd_ltvb57_hWVNG1_QQkRCOF65t9L71Xp7dMBhzY23RLGjT8xZwKUdN9FlHFGwZjpZp2f-RmT5-WpndS5Yjh70SB-cK2slRuoKwXHuqMm5I)
+
+And added s circle on the 3d shape
+
+![](https://lh5.googleusercontent.com/gpr4jZAMBYkR0qP_8C2r9Z2XA0KVGMZ4aHsN9K32Ve1xwKkyAd2D_6ElDoduDSyoblkUE5uXIeOiu9XnVCZsrZLaE3MD27y54aSHRacaY86OXpsJLFI4lHafQMCu5j_VX78F9QeliaeSQTs04Ji5-58)
+
+After that i pressed on pocket
+
+![](https://lh4.googleusercontent.com/XV3eQPfjuEUoTpxaa6uglQ7pfFPTtyrnGjatLy7ck_pftGLCGJo8wZRkBfWXZl1O6uqdAI6ic3ljN818skYhZSZTQEDC47p9cR3un1Cs6QPQL1TmE-XRVdaGy5uubJbVKxhtvb53hz5Dpp0rsZI1wTo)
+
+And checked symmetric to plane or reversed
+
+![](https://lh4.googleusercontent.com/QqNhf83i5-Ii3GMbOl6qJGx3iG_fdtNTiJZo5DafSXNo_8R34ZYmdmOqhhFZXMdH5So3_PwemcqF3zShVfO1KvVjOg4jB0-qdK2aqrGL-Iwbk-NQQx6SNjGHihS8Ez7qasIhVa3Pq-oPV1V8CkFbQKA)
+
+And the you schoul have a hole!!
+
+![img](https://lh5.googleusercontent.com/shvI_u8BJhX8l78i3FBtuQxchgEHsxa8C-hLmOgv5Dczk4kZzSv0rE7NHWXEc8Yk9BnJYa-VM3b6hfHNaBrgW-uUUT28jcuCkXntiqDLdv5vn2zGqIwspo_akwiJ4orja3GwTd9gMgJPhZbOFISXXuA)
 
 ## Busines model canvas
 
@@ -376,8 +494,6 @@ here is my pitch deck
 when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
 
 there is my [powerpoint](https://docs.google.com/presentation/d/12t8hK0dObHDi4-inl7LIgl4JUvSRfCgX/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true)
-
-
 
 # 2d and 3d designing
 
@@ -460,3 +576,115 @@ And checked symmetric to plane or reversed
 And the you schoul have a pocket!!
 
 ![img](https://lh5.googleusercontent.com/3PF_-xSnT-AOm_OUdfzIhhVsseVmoRgnFrbXnTC1_JFT1VaBAOhUrG3CouGlkn3RECkBThMQQrkkT6cYr1gxF6bIlSEsMAL3bldM-yiwTCd3qpl3PTAbUEP4KuZC1HSGY3I0GMxPC1XtZenNp5xAuMo)
+
+
+# CNC
+
+#### introduction to CNC
+
+Computer numerical control (CNC) is  **a method for automating control of machine tools through the use of software embedded in a microcomputer attached to the tool** . It is commonly used in manufacturing for machining metal and plastic parts.
+
+## making the Gcode of the freecadshape
+
+
+**First we create a job
+
+![](https://lh3.googleusercontent.com/O3fQp-8zoI6WVtHebBIkA5y9qABDe1mdKlq_HEAE5O0J4jrCYhb3LbTx-ns8WLQeEBrbfzKa1dI4PvcblOSNPbutk66XTOTC6eXMheB3eJdGOBZJesYil8yQ0gETaXyLwoNs_yJU6bqeU90tnZmaklE)
+
+And select the body
+
+![](https://lh3.googleusercontent.com/xsObYyLbyg4JWU0YSez0UVwl6qX9kna-yIgaWs5pr8rV486WUqNd8mesDGchWVUWbh6IE27IcJz2Bx0OTlM65_hmnm_CmKL-bC4ySQeCbzAUqBkvljuDHCH99JV6tg7hmNcMIwuB7CdV4EZPOHYMYKQ)
+
+Then we make the outer box a bit bigger then the shape we already have
+
+![](https://lh4.googleusercontent.com/C1hAfgHkVNU4in3gJkISJlI5SDv7F3qJxnS8bbG1f6-9qdkNLL685vx2D67nfgLTquCeIQBPndBlXCN4J1p2sRNRXrC-jRmcdA4Hm8ySPo2Mo0lvC4HZkDHmwImUak6BFXoQlsS4yj3z881D26ny5eA)
+
+Then we scroll to the top point of the shape a press it
+
+![](https://lh3.googleusercontent.com/fBdckqbPYYt9AQOXlUBMthZa-alVLbgNg1sZTG1ZY6_ffFpF9o9_nWV6uS67d_KKkQBn7i1y7BWve6XSh1GV-Rv_ZUJVSAnF2z6MyN8v-mGFBuP4Fb_6s5_4hBASTtbj3CSYE7KyBmFxauZOsK1Qnjg)
+
+Then we set the origin to the top of the shape
+
+![](https://lh6.googleusercontent.com/zgR0EASTqCNg-wEDULR41gdKBYwutffctd3r3DQA06OilaVL24po2X7I-09079vBivWF4yl23h18MlshzxfYnr6P6GSQvf1q5svasCT7K91wtvrRa91HiA8XiWWKlWLxsfBKjxC8aIc69InpoKTeyeI)
+
+And then it will look like this
+
+![](https://lh4.googleusercontent.com/SzV-HPEG_5D1zxSbgQwTtPoSmIK9-XPSsqUoERulqo95KQb_Qwv8cBE2TnnYaZQg921Yrzh6FR0rnb1KXG3L8Wq0rGqKuVgRol_YHheiSs3fx3wHLhyjbmmgw5XAeqBOxvxL1QQjnvNXQdmI4l1wJsg)
+
+Then we set the output up by selecting the processor(uccnc)
+
+![](https://lh6.googleusercontent.com/SyCqcx1TtISBs9121qXUO5oFAe0jHzGktkp0Rq6jMiOco4-J33_eUS-e3bQ1QVsBcvJWLQ6MmxUTuZ0z-NThkSLKovBOkvehabIjMqb6pQztvwwkY1ZZwfB6GyLBfllVdrFfv6JkaStTkcHtFDi-lX0)
+
+And writing the output file
+
+![](https://lh6.googleusercontent.com/P46BV1mSsICp9cZnSzj1z0qpAityNy90PrMe7kfe4KqE6MHAwFQhGTW9K8PG17rFJtcM7_sqltNH-b8nM5NDYNvLO0MlBAiMAFwkOUQkexCKdWk2dDd5fYG9tWYD4BecERqxyGb91BwVOCMEfuxfeZU)
+
+After that we go to the ToolBit dock
+
+![](https://lh4.googleusercontent.com/BL5hea3k2A6NSxtAysZYEm_toSR0_CfDRRqM8rd_oGVhqzEiOL1ZvLZt_5XdnQlRJ14g8RzgojbN99CGoy9_bzrgJuuY-gls76eEO5YSRi_TrChgh-pxu3e4fz8wp7PaMwEwP7LUofYkkcrzvOhNIKA)
+
+And press on the 3 toolbits
+
+![](https://lh4.googleusercontent.com/R22FbbbqNckh8xX33XrKaI06fF0qb33YQmlo89xbGYCbTgoMnlOM35a5utxT0dMl_eZJFAMJoaRSqw5ZRdaCxeX9Mg1Rius68fCkuSV7FV0y3QHUuuANO-wYG9C8zUzVItj8hEigsS83-U-nDbZHnrI)
+
+And then of create tool because we are using a another bit
+
+![](https://lh5.googleusercontent.com/fZndkEZC1ZPsAbWsWJua_sEs5x5zPme8nouyDX7a1l4VjPQU4ffOoCDuy6KMF7n6Elo7clywIm0BycfnUELKgMqbHCnwGd3rrRemg3I2ToLvw2TJaEX2UtUMgAEmL7Zykk4pKpFFm1ME-ympe5AR48U)
+
+Then we choose the endmill toolschape
+
+![](https://lh4.googleusercontent.com/0ca0YB1HwXDaxbMtbdnaBijFQuWhYG34pMYS1EnYPhzcOR9fEC3kT8lax85yx6W7UAiQgdFNVCH5HvmS2Mrk3DspebZZTl90GhSV1c52dx0Vdg6m4vLqfgEYE532vj75oKXxpohYWDNU-n65_TP6txo)
+
+And give it a name
+
+![](https://lh6.googleusercontent.com/EEo04J54rT8ubjvcJNh9QIwyi6EKidI5COlXdGAR-Xf_v9dzYUWGMvsV-f0luJbStwv16i2RokShq9Qb6bPoUKMm6cY_fiTDzvgLAmL0jhi1aVy-pN1CuTXWVjHy5TH3OMpzQTkPf7QU4BrZNhroyak)
+
+Then we have to change these stuff as you see here
+
+![](https://lh5.googleusercontent.com/F3wNkxLketAE8DXrDhpOzOewX5WIwNDQ_T5pwE28TMYNJiqzNtGUaUwM36njwTtLKMXauE-nBqEW89HnIICCkF_INXXViAZ_-d87qkwe0xge_Ycu8DlpPGg4DdHnIvCl_bc-0wTHU3R2TsN4M-nPsyQ)
+
+Then you add it to our job and dubble press it
+
+![](https://lh4.googleusercontent.com/Lg2voBsbKvBDx38jTtCyWIeNyX50SiGWCT2oEExOSyVaza2X0BPpkPlKw2zhNcbBSMgxY6Pd_18_qBtmitLgLuTAaoP2OuSgKE7M9inQN4ytVVftyUUwtraLfVv9FvziN7gV42SNKK172f8bIoR8cRs)
+
+And change the feed and spindle of the ToolBit
+
+![](https://lh3.googleusercontent.com/iXfKH1GyW_ujQwtc3Az1XVTE8MQnWyOzusFtiLlUaz7haLYZQ3muVX9gqgGKAzudDC-3_C-wnXXm92GSmYu75VObSeJq0A8ExmUUcktNl8fQkbMxrix2Y7-7g3gZj3uMpSCEfZaFXuf6IKLYuaqxVLg)
+
+After that we press pocket schape
+
+![](https://lh5.googleusercontent.com/tQU5Iyq7ly2MMg4UZQtyaZKlNkRbccXcfmX2U8oxpokcBGEZGlTrB20KPCun9HojiQJUDXX1ulMAOVozAXr8Qns5KzsHon18dmS7WOfqxrzNyZ4_LA85KeJw0v9kq9NuRw7BTDMPvhtl9B9bDJPQhU0)
+
+And choose the outline of the pocket shape and add it to the base geometry
+
+![](https://lh4.googleusercontent.com/eD4XhxjpORRlMY13i8vZWrN_anqUD15b52-Fab_E7N4tjsoyTT2W-Ltq8A4K_JcHzAnCagwRAHDqKkSEPh5pvv06paHbz2sWVRh-ujWQLW8DpiMk4hLvC9cCCg6eQVe6XTxf6GhPBhcGlm5nu_meqFc)
+
+And then we change the start depth, final depth and the step down(half of the ToolBit)
+
+![](https://lh6.googleusercontent.com/pyZy9umO_ut92-DLEm-wp9l9fVPt_W0GqDsJDP_Ry4me7DsgvuCUqaGdnOXW2PC_HagSzoo0kPKc1kOm2RnkrLJZnpDT09LbCB_Xq0Rn5BXGyr24tUlY7meqg1HHxg9i6Vm3B8ctpf0CaEBFqj0l3Qc)
+
+The cut mode should be conventiu=onal and the pattern should be offset
+
+![](https://lh6.googleusercontent.com/_KLjdUfOW7-NCRjf_eKWg9rhlQxT9ZZ6BfR8-f4Ndos9QzA9XU_CpndH5Kb84Y8k9DaCidSOUu5XLrWQOMUAht7LuOwMrWV70cVmsf9-79SVuGlqalqXKzBTxjHy5h8AaSthq6fcfbquiBIgtq2NX-c)
+
+And Then we press on profile
+
+![](https://lh4.googleusercontent.com/wWSz4zq7yHFwNQ01-aoRBg4wgVyGgBqgDQJPwFVk7sZ6D1Smth_7uimXcYqmm3x4Sz1LN1G0FTkrlAeTtgEhy88ozIUmrIMQAqO6NyRAvzqA2_oj54DsuWs4yXRJZFfk8-otnS1R5qN_GppkaZ5qgeM)
+
+And then we select both hole shapes
+
+![](https://lh6.googleusercontent.com/-Dfw1fy4gsVeiTU7koh5gl2jQOA9yGhEXQ2hBwtbnFfAjGclPYEVmmmmz91IKud3dWf3qMaMmvMvBtRxglSDddsxZCpNjRRd479vtxgorxBX5rBWxGpjNhGkGEz5z80U9JMPSyU05ci4htCWdlTZid0)
+
+And make then inside cut
+
+![](https://lh4.googleusercontent.com/dI1ixr4EzcOUn38gOt0f3I_O60ngxfOXdZo_cdh6_lZWBnHwtK9jl-hRmokDnCzzrCTnw-44mFuQh-b4Z0v6Ukh6zatnVpq4whjAWOY6WwOT2pqkq0L2En1q2hd5AVIPD5JiHDC6QIZv6yrTQRWt1zw)
+
+And then we simulate everything
+
+![](https://lh5.googleusercontent.com/dbFcGkwJv3BCutFpYEHTJNa3WnarJ_R2nTsan3AMKKNeJRplwqpnaYBQ_0qErlnFkj3V8cUGEhPY9uQ6sSlBoQ_hEv2QZniglo8alWsWmRaRwgilOTCEVvoopCtGanr7th8GsYpxAgJh8AfRZvlbqjc)
+
+And it should look like this
+
+![](https://lh5.googleusercontent.com/aN_NQPasIOXCI8MDaieTiTzf5tACp2wL4yr8hf6ZLg3S7JtZv5yJaygc0YSG9zLxX8vhvCQQLBqu_eCy8WamHNgox9lwfG4MSlRxQ1_A-3Hft_tOKeb-I-t8oNizzkzHsyCddf1fpxj8t5vbK1MfZac)
+
+![img](https://lh5.googleusercontent.com/m5grUCVFSJk6rnqFfpw4SoLN2yjhaIw-2jyCg_uMLha6IPuD2_Wu7l_CGeTK04gReuT0GmFS2ynFq2Sd5w4W1HItI-GMUyGGmtpGsmMoN-LDXrWuLXsdwaewU0NRjx2TS-MIg-TNiGQ9jFR91l38U_I)
