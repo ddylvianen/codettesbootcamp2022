@@ -632,6 +632,47 @@ here is the finall look at the Hand!
 
 ![img](glove.jpeg)
 
+
+
+## Lasering
+
+##### Introduction to lasering
+
+The use of a laser beam to cut, divide, or dissolve a substance, or to treat an anatomic structure.
+
+### making a laser sketch
+
+To make the laser sketch I used freecad.
+
+First i installed the laser addon for freecad
+
+![](https://lh6.googleusercontent.com/LtR1sKBjuozbZQCfh0EcdxClJyfgj3ao_0BsixoP1Tnnss5MHwZAVn-Qm0Et0qSRdyTFROhiYxA0AEyqSjBWqLvNGUvfqheLpX-VEhI1SFXAcwwhqnvUOC8JH7UE57U0itXKQhYaHFD9dQzQSMTjxUJKEYmRMJgnkXDuFnTcFapwGKprij3sN4TBJQ)
+
+![](https://lh3.googleusercontent.com/VJMBqNIfvalwZCjjhjGm7XfG62l4PNkCFiNPdd7HtsoU6RZ9INs6P7eXkfu_KfathUHfqRIASKB-uFnvT5aTMEpjFVqVnAKjFLNZkrSWyu-sdM1YoKebn6c-2aO0TUkbDP6g9S3DOVMnhaZQnsTfCnViArBX1NjFphRBulymtyniAOhnmYu9vkAcRQ)
+
+![](https://lh3.googleusercontent.com/-mUp62qXNXWbrn3jBFLWZjsYouF7RSVOAWNrbbbB2_DeKZKxXus0U7Jiyx2r7Fz907BUfmJ5ENiS64Ak1OR-Co9wOu7B6RIkB85QBVJiftHMecP-iw1Zn8T-rh9fnTeboicnhSDYFUHqDIeN9cOy21mI0r-seIErYG8ZrYOOG7LrjpQGx7rmO4__5w)
+
+![](https://lh5.googleusercontent.com/RMo0n1p5mHGtM1AlFcwl8hs3PSfqAsDPaIRvrvxZLUPK1bSykmOQzBJ-EQN7a9wa7Jqko2aa2MOZTVflByeQVIWvBn6Wd7ldpAkxwzg4lmd7Uq0QUyPH6BzLs-Xg6BqLKb0ZLvf0xrt7ZD_BtDLtub-vl5I-XFR5PZcyjowV-6xRHdNYjL922z7mHw)
+
+![](https://lh6.googleusercontent.com/DiJImXuyDtW1L6kDAg13Mm7_KjlK4Ro2yOosD9MOLebqT6jEc8LSCKwckct_orlA38e1GTMdT914CQ72gE8bU6nI6SWt0lmNbBboKl_1M065qDOEKfhNdJYAZhUO87DKGo0kYgsL4YXyDg0qpt3z0PHaHJiK7guoDGqU8txY7Dqd0C01W809vZdUCA)
+
+![](https://lh5.googleusercontent.com/sT8n7vnq0YzL3P-sYYqaQcry1pZ_bLbcdB838QQEsOoNTrnMrUvVpNQDrV2lUvloP-SuMgK6P_OmAYY80mhdG9-lYLmHMzC0RmPXMANX7nLGTGzDKPlE_VUHGEvJIifP97cZumotx7dGFO90RwqLwrxHOzvi_lUt8T1-rhtJ_6NrFXYJFJA2ZU3zuQ)
+
+![](https://lh3.googleusercontent.com/-AJ94I3cBQoWiedtCIc1nree0ksbForqZrKfHcnsOxUXNkASGBMz8fWFvoImXPjMebCTV61uAytOUhlEMnL6V-dRi9ROB0juxAeoyADisgz1zw9B913t8irTueY5jsHp0aQEDFwpVNVzfEI64RjXOg4X7ZxTmCmzVr3RPbP-kk8PwVLXWJAIyqyFYA)
+
+![](https://lh5.googleusercontent.com/caTiR8hjELQbW7ghSvbq-JcHs87_J5NFhVcwh1riB43uifFS0COh1O_3XQfCADiAMJy8hZzK5R90qkHhfryq_9SRt9RcPSHiBm7R033sBduws9aieg6uHLKZ5EIkL47ZsL5ZZdxx2I05xEY4_3x43dW1eAeEhkNVokcsx-qZu7E-v9Z7fkngYUX4jw)
+
+![](https://lh4.googleusercontent.com/tFFZb1mNsbkB4R16BbJoUkaNzbE_vACAUoGKgVo8Q33rS4hghNPHM1grnJwm7qwcc2b4F-c7cxaEzvF-crUBYGH8118-MGfm72KYG67oyd4GPIXoqEqss66Iq6PkpY3uOmOzQrZHxaujqBrVo-3UTdnme_P-EjXdmo42TssrwcWxsDGIcEatuVvaPw)
+
+![](https://lh3.googleusercontent.com/s95iohgLe-R8JNn_mCJDGv39BHCvu2AIsLRmXnYKRT-2MelvBuJco374lHCWIojIBpg2m3v5ddOqZS6D69hvCdQCpqE7CIzubk7W4rxhiJCSyLY8hdjTNjZzxfW0gWRXES7XeIA9L1U-k8_gdbBlIBKodRPPOjWTdoFZFgwWNeYy7gs2FqxxZg2dgg)
+
+![](https://lh5.googleusercontent.com/QPjli2BPXrm6Xj5pgodjI9a0r-bZR55owAEXvhSBczTxRyi8kjvbD6UHxd5gWljHGBbLAxGE1ic776KsbiOhy0m8POwrMSfGBKsPofIpa_ZGZ4lnTgT6ZVbrfajyq1bkmbc8Koj1sh9ruxrQ-xNFWh47Hw05zSCkcwfSG1-EWsG7IyHGeY43At-i6Q)
+
+![](https://lh4.googleusercontent.com/Z8n_e3MczHbxFQSXzRP8Uw9H0ZiPHNFxiex4oKSHSX4BssaUuURv8f9_vSx_Mcn80Szvm10CiDPb72xX5QtftewETj5FBy177umaqDtsUa3svV4K_R9Kwp3elVbz0A8UrYmbUdPW5Dm3EuBPPwvBoSiR5wukmdp8BeQLoPlQwRX87wB7T_msYz0PNQ)
+
+![](https://lh5.googleusercontent.com/BTD8djxt3m8nFjOyf9dt12HhJqaHOkGFaPXlkAPBBYSdqgmmFBM77h_8DcfmDyqpf50I2h80fKKXMWCvMpQHmdsEAvBhw8ZM4Re2HxMLxLZuw_iVbX98lDqo3zayn0kdi_G5Hw9-0bU2Irb2LMIcEqNEcM6U_e_GhFlTCtIOT8_U9Lj2pY_1g-UgBQ)
+
+
 ## Busines model canvas
 
 ##### introduction to Business Model Canvas
@@ -705,3 +746,43 @@ here is my pitch deck
 when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
 
 there is my [powerpoint](https://docs.google.com/presentation/d/12t8hK0dObHDi4-inl7LIgl4JUvSRfCgX/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true)
+
+
+
+## Lasering
+
+##### Introduction to lasering
+
+The use of a laser beam to cut, divide, or dissolve a substance, or to treat an anatomic structure.
+
+### making a laser sketch
+
+To make the laser sketch I used freecad.
+
+First i installed the laser addon for freecad
+
+![](https://lh6.googleusercontent.com/LtR1sKBjuozbZQCfh0EcdxClJyfgj3ao_0BsixoP1Tnnss5MHwZAVn-Qm0Et0qSRdyTFROhiYxA0AEyqSjBWqLvNGUvfqheLpX-VEhI1SFXAcwwhqnvUOC8JH7UE57U0itXKQhYaHFD9dQzQSMTjxUJKEYmRMJgnkXDuFnTcFapwGKprij3sN4TBJQ)
+
+![](https://lh3.googleusercontent.com/VJMBqNIfvalwZCjjhjGm7XfG62l4PNkCFiNPdd7HtsoU6RZ9INs6P7eXkfu_KfathUHfqRIASKB-uFnvT5aTMEpjFVqVnAKjFLNZkrSWyu-sdM1YoKebn6c-2aO0TUkbDP6g9S3DOVMnhaZQnsTfCnViArBX1NjFphRBulymtyniAOhnmYu9vkAcRQ)
+
+![](https://lh3.googleusercontent.com/-mUp62qXNXWbrn3jBFLWZjsYouF7RSVOAWNrbbbB2_DeKZKxXus0U7Jiyx2r7Fz907BUfmJ5ENiS64Ak1OR-Co9wOu7B6RIkB85QBVJiftHMecP-iw1Zn8T-rh9fnTeboicnhSDYFUHqDIeN9cOy21mI0r-seIErYG8ZrYOOG7LrjpQGx7rmO4__5w)
+
+![](https://lh5.googleusercontent.com/RMo0n1p5mHGtM1AlFcwl8hs3PSfqAsDPaIRvrvxZLUPK1bSykmOQzBJ-EQN7a9wa7Jqko2aa2MOZTVflByeQVIWvBn6Wd7ldpAkxwzg4lmd7Uq0QUyPH6BzLs-Xg6BqLKb0ZLvf0xrt7ZD_BtDLtub-vl5I-XFR5PZcyjowV-6xRHdNYjL922z7mHw)
+
+![](https://lh6.googleusercontent.com/DiJImXuyDtW1L6kDAg13Mm7_KjlK4Ro2yOosD9MOLebqT6jEc8LSCKwckct_orlA38e1GTMdT914CQ72gE8bU6nI6SWt0lmNbBboKl_1M065qDOEKfhNdJYAZhUO87DKGo0kYgsL4YXyDg0qpt3z0PHaHJiK7guoDGqU8txY7Dqd0C01W809vZdUCA)
+
+![](https://lh5.googleusercontent.com/sT8n7vnq0YzL3P-sYYqaQcry1pZ_bLbcdB838QQEsOoNTrnMrUvVpNQDrV2lUvloP-SuMgK6P_OmAYY80mhdG9-lYLmHMzC0RmPXMANX7nLGTGzDKPlE_VUHGEvJIifP97cZumotx7dGFO90RwqLwrxHOzvi_lUt8T1-rhtJ_6NrFXYJFJA2ZU3zuQ)
+
+![](https://lh3.googleusercontent.com/-AJ94I3cBQoWiedtCIc1nree0ksbForqZrKfHcnsOxUXNkASGBMz8fWFvoImXPjMebCTV61uAytOUhlEMnL6V-dRi9ROB0juxAeoyADisgz1zw9B913t8irTueY5jsHp0aQEDFwpVNVzfEI64RjXOg4X7ZxTmCmzVr3RPbP-kk8PwVLXWJAIyqyFYA)
+
+![](https://lh5.googleusercontent.com/caTiR8hjELQbW7ghSvbq-JcHs87_J5NFhVcwh1riB43uifFS0COh1O_3XQfCADiAMJy8hZzK5R90qkHhfryq_9SRt9RcPSHiBm7R033sBduws9aieg6uHLKZ5EIkL47ZsL5ZZdxx2I05xEY4_3x43dW1eAeEhkNVokcsx-qZu7E-v9Z7fkngYUX4jw)
+
+![](https://lh4.googleusercontent.com/tFFZb1mNsbkB4R16BbJoUkaNzbE_vACAUoGKgVo8Q33rS4hghNPHM1grnJwm7qwcc2b4F-c7cxaEzvF-crUBYGH8118-MGfm72KYG67oyd4GPIXoqEqss66Iq6PkpY3uOmOzQrZHxaujqBrVo-3UTdnme_P-EjXdmo42TssrwcWxsDGIcEatuVvaPw)
+
+![](https://lh3.googleusercontent.com/s95iohgLe-R8JNn_mCJDGv39BHCvu2AIsLRmXnYKRT-2MelvBuJco374lHCWIojIBpg2m3v5ddOqZS6D69hvCdQCpqE7CIzubk7W4rxhiJCSyLY8hdjTNjZzxfW0gWRXES7XeIA9L1U-k8_gdbBlIBKodRPPOjWTdoFZFgwWNeYy7gs2FqxxZg2dgg)
+
+![](https://lh5.googleusercontent.com/QPjli2BPXrm6Xj5pgodjI9a0r-bZR55owAEXvhSBczTxRyi8kjvbD6UHxd5gWljHGBbLAxGE1ic776KsbiOhy0m8POwrMSfGBKsPofIpa_ZGZ4lnTgT6ZVbrfajyq1bkmbc8Koj1sh9ruxrQ-xNFWh47Hw05zSCkcwfSG1-EWsG7IyHGeY43At-i6Q)
+
+![](https://lh4.googleusercontent.com/Z8n_e3MczHbxFQSXzRP8Uw9H0ZiPHNFxiex4oKSHSX4BssaUuURv8f9_vSx_Mcn80Szvm10CiDPb72xX5QtftewETj5FBy177umaqDtsUa3svV4K_R9Kwp3elVbz0A8UrYmbUdPW5Dm3EuBPPwvBoSiR5wukmdp8BeQLoPlQwRX87wB7T_msYz0PNQ)
+
+![](https://lh5.googleusercontent.com/BTD8djxt3m8nFjOyf9dt12HhJqaHOkGFaPXlkAPBBYSdqgmmFBM77h_8DcfmDyqpf50I2h80fKKXMWCvMpQHmdsEAvBhw8ZM4Re2HxMLxLZuw_iVbX98lDqo3zayn0kdi_G5Hw9-0bU2Irb2LMIcEqNEcM6U_e_GhFlTCtIOT8_U9Lj2pY_1g-UgBQ)
