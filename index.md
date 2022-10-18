@@ -343,6 +343,15 @@ And then i sliced it and saved it as a Gcode
 
 ![img](https://lh4.googleusercontent.com/j513_dHTVsv2Vcz65Z_DTTufI__Ndrb4p_GcRD9LVcerKh4TmyGhWLJ7Um0JaBKKrdNN7bcn62P0FRHL2ZReTxR-I8UF6kY4iMAj0fXW5lQE04_8LnvNcCWk5FHTyBw9VDyfU59sfoxgejvbRKmyPQ)
 
+### printing something
+
+i choose to print my name. after i made a 3d shape of my name in thinkercad i open cura and set the above specified perams i saved it as Gcode and put it on a SD card and put the SD card in the 3d machine. in the mchin interface i searched for my Gcode and loaded it. after checking if every params where good i pressed start and waited for th print to finnish, waiting a few minutes to check that the fillament does not jam or not stick to the bottom plate.
+
+
+after it was finnished this is what i got (i lost the A lol)
+
+![img](3dprint.jpeg)
+
 ## Working with freecad
 
 ##### introduction to freecad
@@ -612,6 +621,16 @@ And it should look like this
 ![](https://lh5.googleusercontent.com/aN_NQPasIOXCI8MDaieTiTzf5tACp2wL4yr8hf6ZLg3S7JtZv5yJaygc0YSG9zLxX8vhvCQQLBqu_eCy8WamHNgox9lwfG4MSlRxQ1_A-3Hft_tOKeb-I-t8oNizzkzHsyCddf1fpxj8t5vbK1MfZac)
 
 ![img](https://lh5.googleusercontent.com/m5grUCVFSJk6rnqFfpw4SoLN2yjhaIw-2jyCg_uMLha6IPuD2_Wu7l_CGeTK04gReuT0GmFS2ynFq2Sd5w4W1HItI-GMUyGGmtpGsmMoN-LDXrWuLXsdwaewU0NRjx2TS-MIg-TNiGQ9jFR91l38U_I)
+
+### cutting out the cnc Gcode
+
+for ym final project i cnced a hand that a drawed in (a drawing app) and followed the same steps above to make the Gcode. after that i loaded the cnc software called stepcraft after i loaded the gcode and set the xyz origen and started the gcode. it ran without problems!
+
+(i could not get any photos because the stepcraft didnt work on my device BUTT i maneged to get 1 photo) 
+
+here is the finall look at the Hand!
+
+![img](glove.jpeg)
 
 ## Busines model canvas
 
