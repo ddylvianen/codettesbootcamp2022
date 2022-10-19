@@ -347,7 +347,6 @@ And then i sliced it and saved it as a Gcode
 
 i choose to print my name. after i made a 3d shape of my name in thinkercad i open cura and set the above specified perams i saved it as Gcode and put it on a SD card and put the SD card in the 3d machine. in the mchin interface i searched for my Gcode and loaded it. after checking if every params where good i pressed start and waited for th print to finnish, waiting a few minutes to check that the fillament does not jam or not stick to the bottom plate.
 
-
 after it was finnished this is what i got (i lost the A lol)
 
 ![img](3dprint.jpeg)
@@ -626,13 +625,11 @@ And it should look like this
 
 for ym final project i cnced a hand that a drawed in (a drawing app) and followed the same steps above to make the Gcode. after that i loaded the cnc software called stepcraft after i loaded the gcode and set the xyz origen and started the gcode. it ran without problems!
 
-(i could not get any photos because the stepcraft didnt work on my device BUTT i maneged to get 1 photo) 
+(i could not get any photos because the stepcraft didnt work on my device BUTT i maneged to get 1 photo)
 
 here is the finall look at the Hand!
 
 ![img](glove.jpeg)
-
-
 
 ## Lasering
 
@@ -671,7 +668,6 @@ First i installed the laser addon for freecad
 ![](https://lh4.googleusercontent.com/Z8n_e3MczHbxFQSXzRP8Uw9H0ZiPHNFxiex4oKSHSX4BssaUuURv8f9_vSx_Mcn80Szvm10CiDPb72xX5QtftewETj5FBy177umaqDtsUa3svV4K_R9Kwp3elVbz0A8UrYmbUdPW5Dm3EuBPPwvBoSiR5wukmdp8BeQLoPlQwRX87wB7T_msYz0PNQ)
 
 ![](https://lh5.googleusercontent.com/BTD8djxt3m8nFjOyf9dt12HhJqaHOkGFaPXlkAPBBYSdqgmmFBM77h_8DcfmDyqpf50I2h80fKKXMWCvMpQHmdsEAvBhw8ZM4Re2HxMLxLZuw_iVbX98lDqo3zayn0kdi_G5Hw9-0bU2Irb2LMIcEqNEcM6U_e_GhFlTCtIOT8_U9Lj2pY_1g-UgBQ)
-
 
 ## Busines model canvas
 
@@ -739,15 +735,13 @@ your pitch deck can have anything you want on it but it usualy has everything ab
 
 here is my pitch deck
 
-** instert when done **
+![img](pitchdeck.jpeg)
 
 #### pitching
 
 when your pitching your business you have to have a impact story about the pain your trying to solve at the beginning becuase that will draw the peoples attention and make them remember you business longer. use a lot of visualisations in your powerpoint
 
 there is my [powerpoint](https://docs.google.com/presentation/d/12t8hK0dObHDi4-inl7LIgl4JUvSRfCgX/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true)
-
-
 
 ## Lasering
 
