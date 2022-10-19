@@ -860,19 +860,16 @@ Okay that's enough about the small introduction about the code let's get into it
 
 This sets the pins of each flex sensor
 
-| fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);`` |
-| ---------------------------------------------------------------------------------------- |
+ ```c++
+ fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);
+ ```
+
 
 This calibrates the highest and lowest flex sensor output for the constraints of the outputs
 
- while(millis()<privtime+times)
-
-  {
-
-    if(digitalRead(7)==HIGH)
-
-    {
-
+```c++
+ while(millis()<privtime+times){
+    if(digitalRead(7)==HIGH){
     floatflexADC1=analogRead(Flex_pin1);
 
     floatflexADC2=analogRead(Flex_pin2);
@@ -966,7 +963,7 @@ This calibrates the highest and lowest flex sensor output for the constraints of
     }
 
   }
-
+```
 This contains the flex sensors outputs to a smaller number from 0 to 90
 
 floatFlexgrade1=readconstrainmapflex(Flex_pin1,flexADC1,sensorMin1,sensorMax1);
@@ -980,7 +977,7 @@ floatFlexgrade1=readconstrainmapflex(Flex_pin1,flexADC1,sensorMin1,sensorMax1);
  floatFlexgrade5=readconstrainmapflex(Flex_pin5,flexADC5,sensorMin5,sensorMax5);
 
 Here is a example of one of the if statements
-
+```c++
 if(((Flexgrade1>=25)&&(Flexgrade1<=42))&&((Flexgrade2>=40)&&(Flexgrade2<=60))&&((Flexgrade3>=40)&&(Flexgrade3<=60))&&((Flexgrade4>=35)&&(Flexgrade4<=60))&&(Flexgrade5==90))
 
   {
@@ -1006,7 +1003,7 @@ voidprintletter(charread_letter)
   }
 
 }
-
+```
 Okay i hope to have explained everything that i find hard to get but if anything still needs clarification feel free to ask me
 
 #### References
