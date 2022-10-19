@@ -780,3 +780,310 @@ First i installed the laser addon for freecad
 ![](https://lh4.googleusercontent.com/Z8n_e3MczHbxFQSXzRP8Uw9H0ZiPHNFxiex4oKSHSX4BssaUuURv8f9_vSx_Mcn80Szvm10CiDPb72xX5QtftewETj5FBy177umaqDtsUa3svV4K_R9Kwp3elVbz0A8UrYmbUdPW5Dm3EuBPPwvBoSiR5wukmdp8BeQLoPlQwRX87wB7T_msYz0PNQ)
 
 ![](https://lh5.googleusercontent.com/BTD8djxt3m8nFjOyf9dt12HhJqaHOkGFaPXlkAPBBYSdqgmmFBM77h_8DcfmDyqpf50I2h80fKKXMWCvMpQHmdsEAvBhw8ZM4Re2HxMLxLZuw_iVbX98lDqo3zayn0kdi_G5Hw9-0bU2Irb2LMIcEqNEcM6U_e_GhFlTCtIOT8_U9Lj2pY_1g-UgBQ)
+
+
+
+## Final Project (Visionary Hands)
+
+##### Introduction
+
+Visionary hands is a sign language to speech bridge built inside a glove. It is a project from our HackOmation IoT Challenge 2022. The aim is to translate hand signs via strain gauges to letters using a library of known signs and an AI engine for improving detections.
+
+The next iteration involves combining two gloves with accelerometers to also capture  gestures and convert those to words using inverse kinematics of the human upper body.
+
+### Still to do:
+
+* Finish the AI model for the accuracy
+* Make the AI model for the accuracy
+* Add a vibrating motor for relaying ambient noise levels (Calling, alarm etc)
+
+### Material Requirements
+
+* Pair of gloves
+* Strain gauges (5 pcs per glove)([https://www.spectrasymbol.com/product/flex-sensors/#tab-distributors](https://www.spectrasymbol.com/product/flex-sensors/#tab-distributors))
+* mpu9265(or any 9dof IMU would work too)
+* Esp32 module(we are using the esp32-s2-wroom but any esp with wifi should do the job)
+* Wires and resistors(5x 10k resistors for the Strain gauges)
+* Pin Headers for MPU and uC
+* Perf-board or custom PCB(py 5cmx7cm [https://www.adafruit.com/product/4786](https://www.adafruit.com/product/4786))
+* Enclosure(3d printed)
+* LiPo Battery (flat) (hasn't been used yet or bought yet)
+
+Advised Parts-list for Glove Pair:
+
+* Pair of garden or runner gloves eg [Nike Runner](https://www.amazon.com/Nike-Element-Running-Gloves-Silver/dp/B078WGKWW7/ref=sr_1_3?crid=2BGO7QDU5350A&keywords=Nike%2BSphere%2B360%2BRunning%2Bbreathing%2BGloves&qid=1666008792&sprefix=nike%2Bsphere%2B360%2Brunning%2Bbreathing%2Bgloves%2Caps%2C207&sr=8-3&th=1) @ $25 or [Flexilla Garden](https://www.amazon.com/Flexzilla-GC290M-Bamboo-Crinkle-ZillaGreen/dp/B08ZQ5PRHX/ref=sr_1_30_sspa?crid=2UUVPR9AAYQ8P&keywords=Nike+garden+gloves&qid=1666008908&qu=eyJxc2MiOiIxLjQ3IiwicXNhIjoiMS4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=nike+garden+glove%2Caps%2C220&sr=8-30-spons&psc=1) @ $5
+* 2x [ESP32 starter kit](https://www.aliexpress.us/item/3256804153580081.html?spm=a2g0o.detail.1000014.5.674a59cd9uUO16&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40050.281175.0&scm_id=1007.40050.281175.0&scm-url=1007.40050.281175.0&pvid=97d7af3b-1a2f-4e17-b031-7951de28be50&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40050.281175.0,pvid:97d7af3b-1a2f-4e17-b031-7951de28be50,tpp_buckets:668%232846%238113%231998&pdp_ext_f=%7B%22sku_id%22%3A%2212000028820378692%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=2%40dis%21USD%2112.9%2112.9%21%21%21%21%21%40210323a416657738103337417e1ac4%2112000028820378692%21rec) @$13 (each glove gets one)
+* 2x IMU [MPU9265](https://www.amazon.com/MPU-9255-Three-axis-Gyroscope-Accelerometer-Magnetic/dp/B08D11HBZ7/ref=sr_1_17?crid=2JICHOUHCF8X3&keywords=MPU9265&qid=1666009715&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=mpu9265%2Caps%2C293&sr=8-17) @ $8.42
+* 1x mini [10pcs LiPo battery+ charger](https://www.amazon.com/Accessories-Battery-Charger-Quadcopter-Wholesale/dp/B08B5T3LFG/ref=sr_1_21?crid=8OGH822MFII8&keywords=mini+lipo+battery&qid=1666011343&qu=eyJxc2MiOiI0LjU0IiwicXNhIjoiMy43NiIsInFzcCI6IjIuODIifQ%3D%3D&sprefix=mini+lipo+battery%2Caps%2C250&sr=8-21) @35/set or 2x [Wrist Power Banks](https://www.aliexpress.us/item/3256804150563219.html?spm=a2g0o.productlist.main.5.43e64d12fIFIwR&algo_pvid=0059221a-58c2-42d9-bcbd-ed93004e9376&algo_exp_id=0059221a-58c2-42d9-bcbd-ed93004e9376-2&pdp_ext_f=%7B%22sku_id%22%3A%2212000028808470756%22%7D&pdp_npi=2%40dis%21USD%2135.0%2135.0%21%21%21%21%21%40211bd4cd16660102040202676d072e%2112000028808470756%21sea&curPageLogUid=asopnJ3RJZ3v) @$37
+* 10 pcs [Flex Strain Gauges](https://www.amazon.com/Pressure-SF15-150-150mmx15mm-Resistance-type-Sensitive/dp/B08B41DF22/ref=sr_1_3?crid=1ZXQZ76BYEZAN&keywords=flex+strain+sensor&qid=1666009301&sprefix=flex+strain+sensor%2Caps%2C217&sr=8-3) 4.5" @ $15 (est)
+* Resistors and maybe some power regulator IC's
+
+This brings the total investments upper limit for stage 1 around USD300 (+approx $50 shipping costs)
+
+### Glove 1.0
+
+The first prototype was made digitally on tinkercad because it sounded to most people more difficult as it sounds but the first prototype was not. It consists of 5 flex sensors placed on the back on every finger and based  on the readings a letter is read
+
+#### The assembly
+
+The assembly consists of a pair of gloves, 5 flex sensors, a MPU9250, a ESP32
+
+The flex sensors were stitched to the back of every finger and everything is brought together on a Perf-Board that is stitched on the back of the hand with a 3D base under it.
+
+![](https://lh4.googleusercontent.com/TkwOgd1BehM4MLjbzgKPiqqXCfWdr0rY3E0IyipxJBkzYqzqdC26-simkx5TJq3nzxhewRuft9eqSospux9DEzWBBYD78vZkC2Q3jjZuUc48LMw5SD-wrKFyeFBN8WKRXHnTnTqAFyyv9lXQsAMNSZua3aacmQm22EDZcmU7iaGsKPSGgY44tVpaUg)
+
+Here is a photo of the flex sensors stitched to the gloves
+
+![](https://lh4.googleusercontent.com/CJR911E2Jcvm87OaodWWtquTWjEnQNS889MLMHAGHxImVak0uLgjqux78lQQeBH1qZJqzCbgt_lS4XGR6e5FiIeKQI8tcsHri6CHQEADB3p3LmsvurPrWdLdpk-2VeBWg9AYTzNND8Jx6LN3DOyfY2RiypsD5jMfz7VwMQ6ySQ9QaAGT3EFqq_BTWQ)
+
+Here is the first working and fully made glove
+
+##### Making the pref-board
+
+When i was making the pref-board the first time it was the first time i actually soldered but i got the hang of it after messing up my first board lol.
+
+I didn't really follow a schematic so i can't really add one put ill show a rough sketch of how i pulled the cables
+
+After I pulled the cables on the board, I pulled some cables to connect the flex sensors to the board. While doing that I soldered on my friend's hand because the sensors were already stitched on the glove and or being stitched. Soldering cables on the flex sensor is not easy because you can very easily burn the connection of the sensor with heat for the iron.
+
+#### The code
+
+The version 1 code mostly consists of if statements that check if a flex sensor is in a set range and if all the flex sensors are in a certain range a letter comes out.
+
+Most of the letters can be read with only the flex sensors but some of the letters have some motion so that's where the MPU comes in.
+
+BUT i could get that to work yet so for the Hack0mation i only had letters that use the flex sensors only (15 letters or sum i lost count lol).
+
+Ohh yeah almost forgot i made a separate library for the flex sensor to not make the main code not so bulky but it did not end as i wanted to because most of the code from the library was useless
+
+Okay that's enough about the small introduction about the code let's get into it
+
+This sets the pins of each flex sensor
+
+| fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);`` |
+| ---------------------------------------------------------------------------------------- |
+
+This calibrates the highest and lowest flex sensor output for the constraints of the outputs
+
+ while(millis()<privtime+times)
+
+  {
+
+    if(digitalRead(7)==HIGH)
+
+    {
+
+    floatflexADC1=analogRead(Flex_pin1);
+
+    floatflexADC2=analogRead(Flex_pin2);
+
+    floatflexADC3=analogRead(Flex_pin3);
+
+    floatflexADC4=analogRead(Flex_pin4);
+
+    floatflexADC5=analogRead(Flex_pin5);
+
+    if(flexADC1<sensorMin1)
+
+    {
+
+    sensorMin1=flexADC1;
+
+    }
+
+    if(flexADC1>sensorMax1)
+
+    {
+
+    sensorMax1=flexADC1;
+
+    }
+
+    if(flexADC2<sensorMin2)
+
+    {
+
+    sensorMin2=flexADC2;
+
+    }
+
+    if(flexADC2>sensorMax2)
+
+    {
+
+    sensorMax2=flexADC2;
+
+    }
+
+    if(flexADC3<sensorMin3)
+
+    {
+
+    sensorMin3=flexADC3;
+
+    }
+
+    if(flexADC3>sensorMax3)
+
+    {
+
+    sensorMax4=flexADC4;
+
+    }
+
+    if(flexADC4<sensorMin4)
+
+    {
+
+    sensorMin4=flexADC4;
+
+    }
+
+    if(flexADC4>sensorMax4)
+
+    {
+
+    sensorMax4=flexADC4;
+
+    }
+
+    if(flexADC5<sensorMin5)
+
+    {
+
+    sensorMin5=flexADC5;
+
+    }
+
+    if(flexADC5>sensorMax5)
+
+    {
+
+    sensorMax5=flexADC5;
+
+    }
+
+    }
+
+  }
+
+This contains the flex sensors outputs to a smaller number from 0 to 90
+
+floatFlexgrade1=readconstrainmapflex(Flex_pin1,flexADC1,sensorMin1,sensorMax1);
+
+ floatFlexgrade2=readconstrainmapflex(Flex_pin2,flexADC2,sensorMin2,sensorMax2);
+
+ floatFlexgrade3=readconstrainmapflex(Flex_pin3,flexADC3,sensorMin3,sensorMax3);
+
+ floatFlexgrade4=readconstrainmapflex(Flex_pin4,flexADC4,sensorMin4,sensorMax4);
+
+ floatFlexgrade5=readconstrainmapflex(Flex_pin5,flexADC5,sensorMin5,sensorMax5);
+
+Here is a example of one of the if statements
+
+if(((Flexgrade1>=25)&&(Flexgrade1<=42))&&((Flexgrade2>=40)&&(Flexgrade2<=60))&&((Flexgrade3>=40)&&(Flexgrade3<=60))&&((Flexgrade4>=35)&&(Flexgrade4<=60))&&(Flexgrade5==90))
+
+  {
+
+    Serial.print("A");
+
+  }
+
+Here is the first way i tried to minimise the spam of reading the letters but that would not work good if you need the same letter after each other
+
+voidprintletter(charread_letter)
+
+{
+
+  if(read_letter!=priv_letter)
+
+  {
+
+    Serial.println(read_letter);
+
+    priv_letter=read_letter;
+
+  }
+
+}
+
+Okay i hope to have explained everything that i find hard to get but if anything still needs clarification feel free to ask me
+
+#### References
+
+Here is the [link](https://github.com/ddylvianen/Visionary-Hands) to all the code and 3d prints, etc of version1.0.
+
+Here is the [link](https://drive.google.com/file/d/1rneLRhRRG5mcmAeZ7FQOerTq3z9IXqmr/view?usp=sharing) to the LIBS for version1.0.
+
+### Glove 2.0
+
+On the second version I wanted to add 2 AI models ,a vibrator to alarm the person if they are being called and make the arduino code better. it does not seem like much but the AI part is the most hardest to do
+
+ The first AI model is for better reading accuracy of the words and letters and the second one is for the inverse kinematic modeling.
+
+The vibrator is going to be controlled by sound loudness that is going to be changeable
+
+![img](https://lh5.googleusercontent.com/3tu2-PkYyx71Dt67eqZljIpnCCMHtPrxi5QO_WpT9JfSNmysuzDkoi5U-lgwwOlEWLncNsVlg83hayivFHO4-IJFhZcVoAfdhbX7tWPCAtkmKtdoUWnxZJoiT1iFoKnp1qAElphYZXiLqfIcfZ3NJtN1s1X1BS29yTBaGopPhIimqHFs72HjJGFCjQ)
+
+#### The assembly
+
+For the second glove I bought a better fitting glove to make wearing the glove more comfy(the old ones fitted very tight on my hands) and made everything over to the new glove. While doing that I also made a new perfboard because the connections on the older ones were not that good.
+
+To make the new perf board I also did not follow a schematic but I did make a power railing and a row for the resistors. For this build we solved the resistor problem that I had with the older versions where with the specified resistor value it gave a very low output. We found that the esp can read a higher analog value than other microcontrollers and that solved the problem.
+
+We also 3dprinted a enclosure for the components
+
+#### The code
+
+The code was completely rebuilt to have separate classes for everything. For example the detecting of letters and words are in a separate class, the kinematics are in a separate class and the AI accuracy is in a separate class.
+
+The detection of words was also completely rebuilt with the help of math and vector distance. This new code does not yet have the kinematic modeling added to it but I do have an older version where that is added.
+
+Before I actually created the circuit I made a tinkercad circuit to simulate it:
+
+[https://www.tinkercad.com/things/heWnATffkK6-visionaryhands-flex/editel?sharecode=i0oi51NOIAM4CiszyZ0qBML8q3vNrdxGz3yAD8fwVjs](https://www.tinkercad.com/things/heWnATffkK6-visionaryhands-flex/editel?sharecode=i0oi51NOIAM4CiszyZ0qBML8q3vNrdxGz3yAD8fwVjs)
+
+### AI model 1: Accuracy
+
+#### Training set
+
+For this model a training set is very very important so i started with that
+
+I made an INO sketch on top of what I already had and rebuilt it to have websockets. After I enter a letter in the serial plotter the ESP sends 50 examples back to back with the entered letter.
+
+The examples are then sent to a python script with websockets and are then stored in a CSV file.
+
+#### AI model
+
+Not yet made
+
+### AI model 1: movement
+
+#### Training set
+
+For the training set I made an arduino sketch which collected 218 rows of raw data in one sample then prints a space that means for the AI model that it is the end of the sample. For each movement I collect 100 samples and save them in a CSV that has the name of the movement, for example shake.csv.
+
+#### AI model
+
+The Ai model is made in google colab with tensorflow and python.
+The Ai model has a list with the names of the movements and opens them one by one and saving all the samples to the tensorflow model after that the model is ran and the trained model is converted in a .h file that then can be used in arduino
+
+#### The problems
+
+* Vector problem
+
+Because the code works with the distance of lines it sometimes mistakes some letters as others because mathematically they are the closest. To solve this I'm trying to work only with the raw values to calculate the distance of the letters and what's read.
+
+#### References
+
+Here is the [link](https://drive.google.com/drive/folders/1rLLe2F80Qpw9iofulS2PyZ5UTKx8yu-y?usp=sharing) to the CSV files
+
+Here is the [link](https://colab.research.google.com/drive/1IdEBUskBIFNHAhzjUdafcr6tCeL3xEIE?usp=sharing) to the code for the movement
+
+here is the [link ](https://drive.google.com/file/d/1jS7SFJwkADKS-4psZpCET0iqG2ULNxEd/view?usp=sharing)to the code for getting the training set (the mpu9250 library is needed check the version1 library zip for it)
+
+here is the[ link](https://drive.google.com/file/d/1VqwMDg_-T8IcDYHy4aLBACfV5tuzAkGH/view?usp=sharing) to the new stack
+
+here is the[ link](https://drive.google.com/file/d/1JuE0VxJngWtPTRND7jXJjFW9Mi7wlhzb/view?usp=sharing) to the sketch that has the kinematic modeling added(note: this version still works with if statements instead of the vector distance and is very messy)(i will if needed clarify the code a bit better)
+
+**
