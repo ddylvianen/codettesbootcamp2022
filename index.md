@@ -2,11 +2,9 @@
 
 ## Setup Dev Environment for ESP32 S2
 
-First i downloaded the Arduino IDE from the [website](https://docs.arduino.cc/)
-
 ![](https://lh6.googleusercontent.com/Uyyg45dXsrwT2kp47vUTU0-Los7nU2lLdbPpBYXEHDvsUPKlQsOhyYSdgymKPy-C1ohuQV-Ck96mbSu6W_asYdafrwtxPAsAfqDLS2tiDMEOKPSVrIgZAAtOqccQLOFFig8y51O0aBwWzQhd86_Yigk)
 
- And waited until the download was done and opened the file and went through the steps for the installation.
+And waited until the download was done and opened the file and went through the steps for the installation.
 
 ![](https://lh5.googleusercontent.com/zug7R1QXY0HkudPOXpNX_kqfrttyKaEudnFUUSmk5J8raL8dUOk7JAdoVuSG5z8DtAqWIWMaQ8ObfcjL6LSOTkUD7ZA0XytVz1wj8he6h0aqImrjR-uCNTbjbKAjjcuTFdZKsXkne0qPMtEuICPbWDU)
 
@@ -669,6 +667,7 @@ First i installed the laser addon for freecad
 
 ![](https://lh5.googleusercontent.com/BTD8djxt3m8nFjOyf9dt12HhJqaHOkGFaPXlkAPBBYSdqgmmFBM77h_8DcfmDyqpf50I2h80fKKXMWCvMpQHmdsEAvBhw8ZM4Re2HxMLxLZuw_iVbX98lDqo3zayn0kdi_G5Hw9-0bU2Irb2LMIcEqNEcM6U_e_GhFlTCtIOT8_U9Lj2pY_1g-UgBQ)
 
+
 ## Busines model canvas
 
 ##### introduction to Business Model Canvas
@@ -781,8 +780,6 @@ First i installed the laser addon for freecad
 
 ![](https://lh5.googleusercontent.com/BTD8djxt3m8nFjOyf9dt12HhJqaHOkGFaPXlkAPBBYSdqgmmFBM77h_8DcfmDyqpf50I2h80fKKXMWCvMpQHmdsEAvBhw8ZM4Re2HxMLxLZuw_iVbX98lDqo3zayn0kdi_G5Hw9-0bU2Irb2LMIcEqNEcM6U_e_GhFlTCtIOT8_U9Lj2pY_1g-UgBQ)
 
-
-
 ## Final Project (Visionary Hands)
 
 ##### Introduction
@@ -860,10 +857,9 @@ Okay that's enough about the small introduction about the code let's get into it
 
 This sets the pins of each flex sensor
 
- ```c++
- fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);
- ```
-
+```c++
+fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);
+```
 
 This calibrates the highest and lowest flex sensor output for the constraints of the outputs
 
@@ -964,19 +960,21 @@ This calibrates the highest and lowest flex sensor output for the constraints of
 
   }
 ```
+
 This contains the flex sensors outputs to a smaller number from 0 to 90
 
 floatFlexgrade1=readconstrainmapflex(Flex_pin1,flexADC1,sensorMin1,sensorMax1);
 
- floatFlexgrade2=readconstrainmapflex(Flex_pin2,flexADC2,sensorMin2,sensorMax2);
+floatFlexgrade2=readconstrainmapflex(Flex_pin2,flexADC2,sensorMin2,sensorMax2);
 
- floatFlexgrade3=readconstrainmapflex(Flex_pin3,flexADC3,sensorMin3,sensorMax3);
+floatFlexgrade3=readconstrainmapflex(Flex_pin3,flexADC3,sensorMin3,sensorMax3);
 
- floatFlexgrade4=readconstrainmapflex(Flex_pin4,flexADC4,sensorMin4,sensorMax4);
+floatFlexgrade4=readconstrainmapflex(Flex_pin4,flexADC4,sensorMin4,sensorMax4);
 
- floatFlexgrade5=readconstrainmapflex(Flex_pin5,flexADC5,sensorMin5,sensorMax5);
+floatFlexgrade5=readconstrainmapflex(Flex_pin5,flexADC5,sensorMin5,sensorMax5);
 
 Here is a example of one of the if statements
+
 ```c++
 if(((Flexgrade1>=25)&&(Flexgrade1<=42))&&((Flexgrade2>=40)&&(Flexgrade2<=60))&&((Flexgrade3>=40)&&(Flexgrade3<=60))&&((Flexgrade4>=35)&&(Flexgrade4<=60))&&(Flexgrade5==90))
 
@@ -1004,6 +1002,7 @@ voidprintletter(charread_letter)
 
 }
 ```
+
 Okay i hope to have explained everything that i find hard to get but if anything still needs clarification feel free to ask me
 
 #### References
@@ -1016,7 +1015,7 @@ Here is the [link](https://drive.google.com/file/d/1rneLRhRRG5mcmAeZ7FQOerTq3z9I
 
 On the second version I wanted to add 2 AI models ,a vibrator to alarm the person if they are being called and make the arduino code better. it does not seem like much but the AI part is the most hardest to do
 
- The first AI model is for better reading accuracy of the words and letters and the second one is for the inverse kinematic modeling.
+The first AI model is for better reading accuracy of the words and letters and the second one is for the inverse kinematic modeling.
 
 The vibrator is going to be controlled by sound loudness that is going to be changeable
 
