@@ -267,11 +267,9 @@ the link to the [site](https://ddylvianen.github.io/) and to the [code](https://
 
 This was my first sketch of the Visionary glove it showed the build lay-up of one of the gloves
 
-![](https://lh6.googleusercontent.com/s0MGZxhn1ryPchSU3NozqyXI1YhqB0z_bNVnZodddBLKwuW33rNXkA3U08maIy_UEZE50Um4bElpoXjtaxCU0hnVOhgLCnEC9ex3pjahpWDU7Kr5Yau1pZ0VGG7DRbw6pbw49-os5q9PtQmkSwrlK_Q)
+### **Explain the HackOmation quadrant in relation to your final project**
 
-And this is the final version of my sketch
-
-![img](https://lh6.googleusercontent.com/NJRFQVPBg6MVtyvtYE0eFyyZoCIgmmQUoJvsESvDswL_8aEScWil1afzlducznwReMp8d34QFvZSuRnE7FcePAKa8tSZGrvVtM_pJ7JxPjo28ObsLexw9dsxDZ0UChGoFqPD2YbIpsKTA_z21jJJznQ)
+### **Create data-bound widgets to display sensor data**
 
 ## 3D printing
 
@@ -781,8 +779,6 @@ First i installed the laser addon for freecad
 
 ![](https://lh5.googleusercontent.com/BTD8djxt3m8nFjOyf9dt12HhJqaHOkGFaPXlkAPBBYSdqgmmFBM77h_8DcfmDyqpf50I2h80fKKXMWCvMpQHmdsEAvBhw8ZM4Re2HxMLxLZuw_iVbX98lDqo3zayn0kdi_G5Hw9-0bU2Irb2LMIcEqNEcM6U_e_GhFlTCtIOT8_U9Lj2pY_1g-UgBQ)
 
-
-
 ## Final Project (Visionary Hands)
 
 ##### Introduction
@@ -860,10 +856,9 @@ Okay that's enough about the small introduction about the code let's get into it
 
 This sets the pins of each flex sensor
 
- ```c++
+```c++
  fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);
- ```
-
+```
 
 This calibrates the highest and lowest flex sensor output for the constraints of the outputs
 
@@ -964,6 +959,7 @@ This calibrates the highest and lowest flex sensor output for the constraints of
 
   }
 ```
+
 This contains the flex sensors outputs to a smaller number from 0 to 90
 
 floatFlexgrade1=readconstrainmapflex(Flex_pin1,flexADC1,sensorMin1,sensorMax1);
@@ -977,6 +973,7 @@ floatFlexgrade1=readconstrainmapflex(Flex_pin1,flexADC1,sensorMin1,sensorMax1);
  floatFlexgrade5=readconstrainmapflex(Flex_pin5,flexADC5,sensorMin5,sensorMax5);
 
 Here is a example of one of the if statements
+
 ```c++
 if(((Flexgrade1>=25)&&(Flexgrade1<=42))&&((Flexgrade2>=40)&&(Flexgrade2<=60))&&((Flexgrade3>=40)&&(Flexgrade3<=60))&&((Flexgrade4>=35)&&(Flexgrade4<=60))&&(Flexgrade5==90))
 
@@ -1004,6 +1001,7 @@ voidprintletter(charread_letter)
 
 }
 ```
+
 Okay i hope to have explained everything that i find hard to get but if anything still needs clarification feel free to ask me
 
 #### References
@@ -1082,5 +1080,612 @@ here is the [link ](https://drive.google.com/file/d/1jS7SFJwkADKS-4psZpCET0iqG2U
 here is the[ link](https://drive.google.com/file/d/1VqwMDg_-T8IcDYHy4aLBACfV5tuzAkGH/view?usp=sharing) to the new stack
 
 here is the[ link](https://drive.google.com/file/d/1JuE0VxJngWtPTRND7jXJjFW9Mi7wlhzb/view?usp=sharing) to the sketch that has the kinematic modeling added(note: this version still works with if statements instead of the vector distance and is very messy)(i will if needed clarify the code a bit better)
+
+## 12 Final Project
+
+### 12.1 Introduction
+
+HI! Im Dylan Sheldon Vianen,
+
+I'm a self learned programmer
+
+And throughout my journey in the codettes bootcamp i have learned about project Management, video Production , Business Model Canvas, Computer Aided Design, Computer Control Cutting & Machining, Electronics Production, 3D printing, Electronics Design, Embedded Programming
+
+AND last but not least Interface and application programming.
+
+My Favorite out of all of them is Embedded programming.
+
+#### 12.2 The Idea
+
+Visionary hands is a sign language to speech bridge built inside a glove. It is a project from our HackOmation IoT Challenge 2022. The aim is to translate hand signs via strain gauges to letters using a library of known signs and an AI engine for improving detections.
+
+The next iteration involves combining two gloves with accelerometers to also capture  gestures and convert those to words using inverse kinematics of the human upper body.
+
+#### 12.3 Research & Initial conclusions
+
+While researching I found out that building the AI model was gonna be my hardest challenge to beat. Further I found out that an AI model can also be run on a ESP32 so that saved me from having an extra microcontroller for just je AI model or  a whole other microcontroller for everything.
+
+#### 12.4 System Architecture
+
+On the newest version I wanted to add 2 AI models ,a vibrator to alarm the person if they are being called and make the arduino code better. it does not seem like much but the AI part is the most hardest to do
+
+ The first AI model is for better reading accuracy of the words and letters and the second one is for the inverse kinematic modeling.
+
+The vibrator is going to be controlled by sound loudness that is going to be changeable
+
+![img](https://lh3.googleusercontent.com/qjc66fp37o4haGkSt6cNTTFihBpVlL6CJUu3oycgY014V-rqI3Bdd0SlRNDrt1Hs43PtnpEs8QCcVVLra8LazlkfL3FKriUsuu2qhol8LfaB-a25Aiy1_Z7utkCie7-WqO-Ytv4BuoZhf-izAiH2kBufWsDxkzAqVTqazpIl5gAjp848nG5stgtUOF6n6g)
+
+### 12.5 Physical Design / Model
+
+##### Version 1.0
+
+The assembly consists of a pair of gloves, 5 flex sensors, a MPU9250, a ESP32
+
+The flex sensors were stitched to the back of every finger and everything is brought together on a Perf-Board that is stitched on the back of the hand with a 3D base under it.
+
+![](https://lh6.googleusercontent.com/o24-xeLAsFL8X68bgBIFYGeofsZ5on1lQWp_G5qocyLTNtyIPYxRPSYEiJhc3JqiSAzSVh6wb4dRv6VwkEfKwd3i9ytIjTjS35rs7jdpgCKiNra9VvvFboE7AhKv90fZO08sn954VQeGl_f4zP-rD3EEGw0OH2mAP5ioBO-A2g6ExzAIl5r2nvEgxfPWOA)
+
+Here is a photo of the flex sensors stitched to the gloves
+
+![](https://lh4.googleusercontent.com/MQE0n1hs8TnocDssEjzBUJwMoL5vLPjioRMh_pibPzTo-kr5LnmV83S3v8sBa8XFnsdjzgghMv4dhp3SCdRIy7QgFV_fPUCO6q5eCu5MaUyKM3SklqXbPhiy5ve8d1LeNzclQl4hNs_z6SCwfjN9qoi-9eOWVCpxuHI8p2DqDv_wRF-GDhW1PqkW342JAQ)
+
+Here is the first working and fully made glove
+
+### Making the pref-board
+
+When i was making the pref-board the first time it was the first time i actually soldered but i got the hang of it after messing up my first board lol.
+
+I didn't really follow a schematic so i can't really add one but ill show a rough sketch of how i pulled the cables
+
+INSERT DRAWING OF SCHEM
+
+After I pulled the cables on the board, I pulled some cables to connect the flex sensors to the board. While doing that I soldered on my friend's hand because the sensors were already stitched on the glove and or being stitched. Soldering cables on the flex sensor is not easy because you can very easily burn the connection of the sensor with heat for the iron.
+
+#### Version 2.0
+
+This was my first sketch of the Visionary glove it showed the build lay-up of one of the gloves
+
+![](https://lh5.googleusercontent.com/OjKFChfsHRey5VjiZFd4xixJkL66Vq3351FEHXRvYpx78eQa1GZDgOgJ-wN376P3bR5xfNG0_vtNk3VqUScY1C-LnkKmz39ozhsdFyNse213XwyqLpkt1QlXRA6xrbEWV_NN8hlS-qjt9JcYQpOhs8sVDIGYVBAQOXCudzlEuWB3x6p7muA_gXppZHdeTw)
+
+And this is the final version of my sketch
+
+![](https://lh5.googleusercontent.com/fP8sqPmCEPimLdIJph_2Oa5gp27kVVxeV8cFtMhWXVflKrM48ssnwHxuAn1Pj4yvxComNfVdEjj-uKzzE8UCkVdoo2UKqFlR9wbkTgE2pyiwc88_QZ5zb4SHk_4TR5auDrmPFYJRW3CNgFMqmPZY7q7Jsc34pIjUMSCORd8cn9mt03QTLoHm7mjiBepMAA)
+
+## The assembly
+
+For the second glove I bought a better fitting glove to make wearing the glove more comfy(the old ones fitted very tight on my hands) and made everything over to the new glove. While doing that I also made a new perfboard because the connections on the older ones were not that good.
+
+To make the new perf board I also did not follow a schematic but I did make a power railing and a row for the resistors. For this build we solved the resistor problem that I had with the older versions where with the specified resistor value it gave a very low output. We found that the esp can read a higher analog value than other microcontrollers and that solved the problem.
+
+We also 3dprinted a enclosure for the components
+
+# 12.6 Embedded System & Coding
+
+## Version 1.0
+
+The version 1 code mostly consists of if statements that check if a flex sensor is in a set range and if all the flex sensors are in a certain range a letter comes out.
+
+Most of the letters can be read with only the flex sensors but some of the letters have some motion so that's where the MPU comes in.
+
+BUT i could get that to work yet so for the Hack0mation i only had letters that use the flex sensors only (15 letters or sum i lost count lol).
+
+Ohh yeah almost forgot i made a separate library for the flex sensor to not make the main code not so bulky but it did not end as i wanted to because most of the code from the library was useless
+
+Okay that's enough about the small introduction about the code let's get into it
+
+This sets the pins of each flex sensor
+
+| fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);`` |
+| ---------------------------------------------------------------------------- |
+
+This calibrates the highest and lowest flex sensor output for the constraints of the outputs
+
+ while(millis()<privtime+times)
+
+  {
+
+    if(digitalRead(7)==HIGH)
+
+    {
+
+    floatflexADC1=analogRead(Flex_pin1);
+
+    floatflexADC2=analogRead(Flex_pin2);
+
+    floatflexADC3=analogRead(Flex_pin3);
+
+    floatflexADC4=analogRead(Flex_pin4);
+
+    floatflexADC5=analogRead(Flex_pin5);
+
+    if(flexADC1<sensorMin1)
+
+    {
+
+    sensorMin1=flexADC1;
+
+    }
+
+    if(flexADC1>sensorMax1)
+
+    {
+
+    sensorMax1=flexADC1;
+
+    }
+
+    if(flexADC2<sensorMin2)
+
+    {
+
+    sensorMin2=flexADC2;
+
+    }
+
+    if(flexADC2>sensorMax2)
+
+    {
+
+    sensorMax2=flexADC2;
+
+    }
+
+    if(flexADC3<sensorMin3)
+
+    {
+
+    sensorMin3=flexADC3;
+
+    }
+
+    if(flexADC3>sensorMax3)
+
+    {
+
+    sensorMax4=flexADC4;
+
+    }
+
+    if(flexADC4<sensorMin4)
+
+    {
+
+    sensorMin4=flexADC4;
+
+    }
+
+    if(flexADC4>sensorMax4)
+
+    {
+
+    sensorMax4=flexADC4;
+
+    }
+
+    if(flexADC5<sensorMin5)
+
+    {
+
+    sensorMin5=flexADC5;
+
+    }
+
+    if(flexADC5>sensorMax5)
+
+    {
+
+    sensorMax5=flexADC5;
+
+    }
+
+    }
+
+  }
+
+This contains the flex sensors outputs to a smaller number from 0 to 90
+
+floatFlexgrade1=readconstrainmapflex(Flex_pin1,flexADC1,sensorMin1,sensorMax1);
+
+ floatFlexgrade2=readconstrainmapflex(Flex_pin2,flexADC2,sensorMin2,sensorMax2);
+
+ floatFlexgrade3=readconstrainmapflex(Flex_pin3,flexADC3,sensorMin3,sensorMax3);
+
+ floatFlexgrade4=readconstrainmapflex(Flex_pin4,flexADC4,sensorMin4,sensorMax4);
+
+ floatFlexgrade5=readconstrainmapflex(Flex_pin5,flexADC5,sensorMin5,sensorMax5);
+
+Here is a example of one of the if statements
+
+if(((Flexgrade1>=25)&&(Flexgrade1<=42))&&((Flexgrade2>=40)&&(Flexgrade2<=60))&&((Flexgrade3>=40)&&(Flexgrade3<=60))&&((Flexgrade4>=35)&&(Flexgrade4<=60))&&(Flexgrade5==90))
+
+  {
+
+    Serial.print("A");
+
+  }
+
+Here is the first way i tried to minimise the spam of reading the letters but that would not work good if you need the same letter after each other
+
+voidprintletter(charread_letter)
+
+{
+
+  if(read_letter!=priv_letter)
+
+  {
+
+    Serial.println(read_letter);
+
+    priv_letter=read_letter;
+
+  }
+
+}
+
+Okay that about sums that up! On to the newest version!
+
+## Version 2.0
+
+The code was completely rebuilt to have separate classes for everything. For example the detecting of letters and words are in a separate class, the kinematics are in a separate class and the AI accuracy is in a separate class.
+
+The detection of words was also completely rebuilt with the help of math and vector distance. This new code does not yet have the kinematic modeling added to it but I do have an older version where that is added.
+
+Before I actually created the circuit I made a tinkercad circuit to simulate it:
+
+[https://www.tinkercad.com/things/heWnATffkK6-visionaryhands-flex/editel?sharecode=i0oi51NOIAM4CiszyZ0qBML8q3vNrdxGz3yAD8fwVjs](https://www.tinkercad.com/things/heWnATffkK6-visionaryhands-flex/editel?sharecode=i0oi51NOIAM4CiszyZ0qBML8q3vNrdxGz3yAD8fwVjs)
+
+### AI model 1: Accuracy
+
+#### Training set
+
+For this model a training set is very very important so i started with that
+
+I made an INO sketch on top of what I already had and rebuilt it to have websockets. After I enter a letter in the serial plotter the ESP sends 50 examples back to back with the entered letter.
+
+The examples are then sent to a python script with websockets and are then stored in a CSV file.
+
+#### AI model
+
+Not yet made
+
+### AI model 1: movement
+
+#### Training set
+
+For the training set I made an arduino sketch which collected 218 rows of raw data in one sample then prints a space that means for the AI model that it is the end of the sample. For each movement I collect 100 samples and save them in a CSV that has the name of the movement, for example shake.csv.
+
+#### AI model
+
+# The Ai model is made in google colab with tensorflow and python.
+
+The Ai model has a list with the names of the movements and opens them one by one and saving all the samples to the tensorflow model after that the model is ran and the trained model is converted in a .h file that then can be used in arduino
+
+# The problems
+
+* Vector problem
+
+Because the code works with the distance of lines it sometimes mistakes some letters as others because mathematically they are the closest. To solve this I'm trying to work only with the raw values to calculate the distance of the letters and what's read.
+
+# 12.7 Electronics Design & Production
+
+## Version 1.0
+
+For this version all i had for the electronic design was a 3d printed base that lifted the components of the glove
+
+![](https://lh4.googleusercontent.com/bGeT2t-4BAVFZem3GoWgTvNUhM_Y8mGWNKxQ0CNyZlmawPAtcWHZEVlxq9Kfv242E8Q_fnVMf5fk30GKj6QKz7iwL6V6psT_KNY7qWu2QJUx1IVU1OJKq9wOo_hBAHSMsOVqcATy2RDZpaJB7aebmnkWwmI3DQ1RyQlfCpik_VUVHm_klBA7SIGLRgO6Hg)
+
+## Version 2.0
+
+For this version i began with a box-like case
+
+![](https://lh6.googleusercontent.com/3cDRNUX16kLaFofFQBbpwaQBnE4aZjX18wMvVj50rd2SSef2I4gcdTyLtrJh-2_YC7DiAG5guoqYN8PFlD4FjiEZoHiAtlpikYzgO9GcUrqWHJ6253ePy2Fp5lRQBTnHfYc-i3A2Hc7xvwXQtadusP9e9uHVm-kh47YPaRovCMLjrMRNpxI_qp5MhnEA-w)
+
+Then i tried a new bottom
+
+![](https://lh5.googleusercontent.com/z5jDhkjkFARjdHMCjwvB0QUltvCZlIn8BZkjUEStoYCIDlZ78ARVzCXiqc8c1044mZ9iEqJ4Qu5hxbGvSvIvRGTUy6Xobyz5PLD1Ngc-HJoHFy0hvb0zpL2680E28v4lsEpegnk6YXrZIlruMYXEX8Jgq3VGZdDsECMZIEuHYHyxIf0yeiGZ7JuxCD117A)
+
+Then i lastly iterated with a whole new design with the logo on the top and clips to hold the vibration motor and mic in place
+
+![](https://lh6.googleusercontent.com/_nSULyIsBrQMsU8RoyQgVL-UnFQ54LEM2WslY4yDw4LeCb4LfalIJQdwowuypmGPIPOZar9nxQ9WZNLtukhtSpHBimtkE14TXTWpnI2EEVyDpegwMx_dMFIVBPR8J1xs8wA1LH6oElYVF4PvTRq95EmjbFuXIyOkshfIAWpYO_sIKvpyr5evv8MB1bnICw)
+
+For cnc i cnced a hand do hold the glove when displaying or transporting
+
+![](https://lh4.googleusercontent.com/30p0Pc_CT_Whb5mDxaXm26wtBLrE1wNIuJ34plo03GqKhkucgfVre6nNSLVTdF9JDFvOprSSsT-pgBAj6HSD7IgyTktfGGsuuOl__CgNvgpjcEP6wtwy00T-9buj8TxdqqXmpkI1TMcI8NMyeMbexRpiqycJNvz044MfsjmcMJZ2Nw1br1uY-VIEcurNcA)
+
+For lasering i only made a sketch because the laser is down
+
+![](https://lh5.googleusercontent.com/I5i4bvFnAQSGH59YEgbXxRPktXDyEH6LSvvhTuEjOqwOOxNZfHImF8W2mN2PLuinQaOL7wn3j0RqoXXSs1u-O88hJzUkdFUVhk2PjKgx-hbck84a6oQJZJs_6XWcNrCohzRDtrfNqq7A9oEuEHnmLiTQanelYX40n1oj2QIb9ZvBJouHS-W3VCZBAZMmQA)
+
+# 12.8 Front End design & Coding
+
+![](https://lh4.googleusercontent.com/EiP-lvYOavhG19qxZEv2s-zD3kegnQvwRbjpcfyIiK-R33ausL2QK18ykOGrohC0HMUE_7GsUphh7yR0cVUZ17k_Lsm7DCeAli4NJ6UXedaHk7EZRfjyOBgFJ0gpY1nFJjk3njtpYq-nC1ip34DpIQoHvDxGfftmOU4bdO9uHOpNH_6bpWpXPvt1Y_-RKg)
+
+For the first version i was helped a lot with making this 1 but this 1 did not focus on the letter or word so i made a new version
+
+![](https://lh3.googleusercontent.com/6hd6UGwaaS3orEyMhUaMyvWNK11Mw_nlkAQqNI7WBby3cGgNmMHDyBscNaWGX0pYx_wSXE76Q9RESfmfD_9Q6PX2CWAiSDf-Quz8oUGS8z2rv0Es5C5NI42lhSVWcH1CHV7RwIgpAP-iMelnGs4kqqyphnDjtpYPL08KyHI8PVab4SB8aERyoXJ-dHYBXg)
+
+For this version i kept it sleek and simple, focussing on the letter/word
+
+The js code is the same for both to here is a quick sum of that
+
+vartextonread;
+
+    constws=newWebSocket("ws://192.168.1.17:81");//"ws://192.168.4.1:81");connect to another espon websocket too. (the one where il be sending he messages)
+
+    vart=0;
+
+Here we connect to the ws connection made on the esp32
+
+ws.onopen=function () {
+
+    alert("Connection opened");
+
+    //speak();
+
+    };
+
+    ws.onclose=function () {
+
+    alert("Connection closed");
+
+    };
+
+Here are sum simple on open and onclose add handlers
+
+    ws.onmessage=function (event) {
+
+    vartext=event.data
+
+    consta=document.createElement('a');
+
+    a.textContent=text;
+
+    if (text==" ") {
+
+    varbox=document.getElementById("super");
+
+    sleep(3000);
+
+    box.replaceChildren();
+
+    }
+
+    else{
+
+    textonread==text;
+
+    varbox=document.getElementById("super");
+
+    box.append(text);
+
+    console.log("test");
+
+    console.log(text)
+
+    }
+
+    };
+
+Where when a message comes in from the glove via websockets the message gets processed and if its a empty space the text to speech gets called and after 3 sec the text box gets cleared
+
+    functionsettings() {
+
+    if (t==1) {
+
+    document.getElementById('settings').style.display='flex';
+
+    t=0;
+
+    }
+
+    elseif (t==0) {
+
+    document.getElementById('settings').style.display='none';
+
+    t=1
+
+    }
+
+    }
+
+Here there is a toggle for the settings button
+
+functionsleep(milliseconds) {
+
+    constdate=Date.now();
+
+    letcurrentDate=null;
+
+    do {
+
+    currentDate=Date.now();
+
+    } while (currentDate-date<milliseconds);
+
+    }
+
+This is a sleep function because js does not have 1 built in lol
+
+functionspeak(text) {
+
+    varmsg=newSpeechSynthesisUtterance();
+
+    varvoices=speechSynthesis.getVoices();
+
+    msg.voice=voices[1];
+
+    msg.voiceURI='native';
+
+    msg.volume=1;
+
+    msg.rate=1;
+
+    msg.pitch=2;
+
+    msg.text=text;
+
+    msg.lang='en-US';
+
+    speechSynthesis.speak(msg);
+
+    console.log(text);
+
+  }
+
+This is the text to speech function that takes a String as input and reads it out
+
+# 12.9 The full stack
+
+On the newest version I wanted to add 2 AI models ,a vibrator to alarm the person if they are being called and make the arduino code better. it does not seem like much but the AI part is the most hardest to do
+
+ The first AI model is for better reading accuracy of the words and letters and the second one is for the inverse kinematic modeling.
+
+The vibrator is going to be controlled by sound loudness that is going to be changeable
+
+![](https://lh3.googleusercontent.com/qjc66fp37o4haGkSt6cNTTFihBpVlL6CJUu3oycgY014V-rqI3Bdd0SlRNDrt1Hs43PtnpEs8QCcVVLra8LazlkfL3FKriUsuu2qhol8LfaB-a25Aiy1_Z7utkCie7-WqO-Ytv4BuoZhf-izAiH2kBufWsDxkzAqVTqazpIl5gAjp848nG5stgtUOF6n6g)
+
+## Back-end
+
+For the back-end i hosted the webpage and liked a database to store the incoming sensor data for maintaining the AI database
+
+Here is the code explained
+
+const { json } =require("express");
+
+constexpress=require("express")
+
+constpath=require("path")
+
+constapp=express()
+
+varMongoClient=require('mongodb').MongoClient;
+
+varurl="mongodb://127.0.0.1:27017/";
+
+Here we are calling the needed libs
+
+client.on('connectFailed',function(error) {
+
+    console.log('Connect Error: '+error.toString());
+
+});
+
+client.on('connect',function(connection) {
+
+    console.log('Connection established!');
+
+    //client.send()
+
+    connection.on('error',function(error) {
+
+    console.log("Connection error: "+error.toString());
+
+    });
+
+    connection.on('close',function() {
+
+    console.log('Connection closed!');
+
+    });
+
+    connection.on('message',function(message) {
+
+    vardata=  JSON.parse(message)
+
+    console.log(data["letter"]);
+
+    });
+
+});
+
+client.connect('ws://192.168.1.10:81');
+
+console.log("HERE!")
+
+Here we have all the handlers and here we are connecting to the glove
+
+// Express static webserserver
+
+constpublicDirectoryPath=path.join(__dirname,'data')
+
+app.use('/',express.static(publicDirectoryPath))
+
+Here we are hosting the website
+
+// Express API routes
+
+app.get('/log', (req,res) => {
+
+  res.send(recall())
+
+})
+
+app.get('/lastseen', (req,res) => {
+
+  res.send(finduserList())
+
+})
+
+Here we are declaring the APIs for the recall of data
+
+app.listen(3000, () => {
+
+  console.log("Server has started!")
+
+})
+
+Here we are listing for anytime from the website
+
+# 12.10 Product test & demo
+
+Test & demo your solution (add videos and photos)
+
+# 12.11 Business, Marketing & Promotion
+
+## Pitch deck/Poster
+
+the pitch deck is used for presenting or giving people a quick look into what your trying to do or doing
+
+your pitch deck can have anything you want on it but it usually has everything about your project or business and it should attract people to your booth
+
+here is my pitch deck
+
+![](https://lh5.googleusercontent.com/I4VN6GHvN8bqQIDY134FodHBlh3sphlnKaAbuAdoQ4Q6cAA_x5FSiH4PRTMXk9UJI6yONaxzAUC1w3MCFTh6tb_RjNT9SIiFx__StvTAtzOPNPUp2_hCIfO4UTP_FZftN_3iUNmCqC2ocVL6TTbC6qg6pHB-gcMsNWSFnTgeG-MvI51WNcI7oDQ53jIGzg)
+
+## pitching
+
+When you're pitching your business you have to have an impact story about the pain you're trying to solve at the beginning because that will draw people's attention and make them remember your business longer. use a lot of visualizations in your powerpoint
+
+there is my [powerpoint](https://docs.google.com/presentation/d/1tJk6qtvAg9SN-El-XlB2RSLedTA-ToPn/edit?usp=sharing&ouid=110256527228353879293&rtpof=true&sd=true)
+
+## Business Model Canvas
+
+So with all the things i have learned about business model canvas  created 1 for my own project
+
+And[ here](https://next.canvanizer.com/canvas/rBCFJIdPN3Fyr) it is
+
+## Promotional Video
+
+For the promotion video I tried to keep it as short as possible while still getting my point out.
+
+[Here](https://youtu.be/keFDgXF0hQE) is my promo vid
+
+# Files & Downloads
+
+Here is the [link](https://drive.google.com/drive/folders/1rLLe2F80Qpw9iofulS2PyZ5UTKx8yu-y?usp=sharing) to the CSV files
+
+Here is the [link](https://colab.research.google.com/drive/1IdEBUskBIFNHAhzjUdafcr6tCeL3xEIE?usp=sharing) to the code for the movement
+
+here is the [link ](https://drive.google.com/file/d/1jS7SFJwkADKS-4psZpCET0iqG2ULNxEd/view?usp=sharing)to the code for getting the training set (the mpu9250 library is needed check the version1 library zip for it)
+
+here is the[ link](https://drive.google.com/file/d/1VqwMDg_-T8IcDYHy4aLBACfV5tuzAkGH/view?usp=sharing) to the new stack
+
+here is the[ link](https://drive.google.com/file/d/1JuE0VxJngWtPTRND7jXJjFW9Mi7wlhzb/view?usp=sharing) to the sketch that has the kinematic modeling added(note: this version still works with if statements instead of the vector distance and is very messy)(i will if needed clarify the code a bit better)
+
+Here is the [link](https://github.com/ddylvianen/Visionary-Hands) to all the code and 3d prints, etc of version1.0.
+
+Here is the [link](https://drive.google.com/file/d/1rneLRhRRG5mcmAeZ7FQOerTq3z9IXqmr/view?usp=sharing) to the LIBS for version1.0.
+
+# References
 
 **
