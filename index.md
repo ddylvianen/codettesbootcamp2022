@@ -281,8 +281,6 @@ the web app waits for a message from the glove and when 1 is sent the webapp dis
 
 here i created a simple data-widget with a nodejs server back end
 
-
-
 ## 3D printing
 
 ##### Introduction to 3D printing
@@ -1373,7 +1371,7 @@ The Ai model has a list with the names of the movements and opens them one by on
 
 Because the code works with the distance of lines it sometimes mistakes some letters as others because mathematically they are the closest. To solve this I'm trying to work only with the raw values to calculate the distance of the letters and what's read.
 
-### 12.7 Electronics Design & Production
+### Electronics Design & Production
 
 #### Version 1.0
 
@@ -1403,7 +1401,7 @@ For lasering i only made a sketch because the laser is down
 
 ![](https://lh5.googleusercontent.com/I5i4bvFnAQSGH59YEgbXxRPktXDyEH6LSvvhTuEjOqwOOxNZfHImF8W2mN2PLuinQaOL7wn3j0RqoXXSs1u-O88hJzUkdFUVhk2PjKgx-hbck84a6oQJZJs_6XWcNrCohzRDtrfNqq7A9oEuEHnmLiTQanelYX40n1oj2QIb9ZvBJouHS-W3VCZBAZMmQA)
 
-### 12.8 Front End design & Coding
+### Front End design & Coding
 
 ![](https://lh4.googleusercontent.com/EiP-lvYOavhG19qxZEv2s-zD3kegnQvwRbjpcfyIiK-R33ausL2QK18ykOGrohC0HMUE_7GsUphh7yR0cVUZ17k_Lsm7DCeAli4NJ6UXedaHk7EZRfjyOBgFJ0gpY1nFJjk3njtpYq-nC1ip34DpIQoHvDxGfftmOU4bdO9uHOpNH_6bpWpXPvt1Y_-RKg)
 
@@ -1526,7 +1524,7 @@ functionspeak(text) {
 ``
 This is the text to speech function that takes a String as input and reads it out
 
-### 12.9 The full stack
+### The full stack
 
 On the newest version I wanted to add 2 AI models ,a vibrator to alarm the person if they are being called and make the arduino code better. it does not seem like much but the AI part is the most hardest to do
 
@@ -1622,11 +1620,19 @@ app.listen(3000, () => {
 ``
 Here we are listing for anytime from the website
 
-### 12.10 Product test & demo
+#### Product test & demo
 
-Test & demo your solution (add videos and photos)
 
-### 12.11 Business, Marketing & Promotion
+![](https://lh6.googleusercontent.com/HLugjDYvBnY5i0gh20398evYWcf-diQUIvvNP4z0lRKeXqMin2t1iotVgy5dJz75lmyKLO39sI2ICM4tSec_5drKpqpWG-3WevKSv9wUHSRLDvHksbm5FRXIA2pByYXkDUlFXEwAi14I1x2FbA6oGCGpJyajqWlwK6u1BQwsVsXRIEtKfuWwJy-o6mYyCA)
+
+![](https://lh3.googleusercontent.com/6zjTXfVqYqq89XIp8oNLl2tpVgtRA1j6jnTMD4r52_EIMQNNfCmB6oRClB1Hya4MAtGWq1IIt5TuV5l_vrygbnjDuEkLXhP5_uxNZoN-emuOqrottMVYlcb4GW8F3ify3GxhAO0cXmpeaOvkdBeO1QpfXb9jTLz_PpnJRjYm3aKs_L55QABSAE9QlL7gow)
+
+here is the gloveand the web app sepparate and 
+
+
+here is the [video](https://youtu.be/vGJnYIlo33o) of them all working together
+
+### Business, Marketing & Promotion
 
 #### Pitch deck/Poster
 
