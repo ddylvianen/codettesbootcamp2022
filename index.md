@@ -267,9 +267,21 @@ the link to the [site](https://ddylvianen.github.io/) and to the [code](https://
 
 This was my first sketch of the Visionary glove it showed the build lay-up of one of the gloves
 
-### **Explain the HackOmation quadrant in relation to your final project**
+### Explain the HackOmation quadrant in relation to your final project
 
-### **Create data-bound widgets to display sensor data**
+![img](bt-stack.jpeg)
+
+so for the communication stack it begins with the glove that creates a websocket connection and the web app connecets to that websockets connection.
+
+the web app waits for a message from the glove and when 1 is sent the webapp displayed the letter or word
+
+### Create data-bound widgets to display sensor data
+
+![1674421755455](image/index/1674421755455.png)
+
+here i created a simple data-widget with a nodejs server back end
+
+
 
 ## 3D printing
 
@@ -1174,9 +1186,7 @@ Ohh yeah almost forgot i made a separate library for the flex sensor to not make
 Okay that's enough about the small introduction about the code let's get into it
 
 This sets the pins of each flex sensor
-``c++
-fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5);
-``
+``c++ fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5); ``
 This calibrates the highest and lowest flex sensor output for the constraints of the outputs
 ``c++
  while(millis()<privtime+times)
@@ -1302,9 +1312,7 @@ if(((Flexgrade1>=25)&&(Flexgrade1<=42))&&((Flexgrade2>=40)&&(Flexgrade2<=60))&&(
     Serial.print("A");
 
   }
-``
-Here is the first way i tried to minimise the spam of reading the letters but that would not work good if you need the same letter after each other
-``c++
+``Here is the first way i tried to minimise the spam of reading the letters but that would not work good if you need the same letter after each other``c++
 voidprintletter(charread_letter)
 
 {
@@ -1359,7 +1367,7 @@ The Ai model is made in google colab with tensorflow and python.
 
 The Ai model has a list with the names of the movements and opens them one by one and saving all the samples to the tensorflow model after that the model is ran and the trained model is converted in a .h file that then can be used in arduino
 
-######  The problems
+###### The problems
 
 * Vector problem
 
@@ -1411,10 +1419,7 @@ vartextonread;
 
     constws=newWebSocket("ws://192.168.1.17:81");//"ws://192.168.4.1:81");connect to another espon websocket too. (the one where il be sending he messages)
 
-    vart=0;
-``
-Here we connect to the ws connection made on the esp32
-``javascript
+    vart=0;``Here we connect to the ws connection made on the esp32``javascript
 ws.onopen=function () {
 
     alert("Connection opened");
@@ -1427,10 +1432,7 @@ ws.onopen=function () {
 
     alert("Connection closed");
 
-    };
-``
-Here are sum simple on open and onclose add handlers
-``javascript
+    };``Here are sum simple on open and onclose add handlers``javascript
     ws.onmessage=function (event) {
 
     vartext=event.data
@@ -1463,10 +1465,7 @@ Here are sum simple on open and onclose add handlers
 
     }
 
-    };
-``
-Where when a message comes in from the glove via websockets the message gets processed and if its a empty space the text to speech gets called and after 3 sec the text box gets cleared
-``javascript
+    };``Where when a message comes in from the glove via websockets the message gets processed and if its a empty space the text to speech gets called and after 3 sec the text box gets cleared``javascript
     functionsettings() {
 
     if (t==1) {
@@ -1485,10 +1484,7 @@ Where when a message comes in from the glove via websockets the message gets pro
 
     }
 
-    }
-``
-Here there is a toggle for the settings button
-``javascript
+    }``Here there is a toggle for the settings button``javascript
 functionsleep(milliseconds) {
 
     constdate=Date.now();
@@ -1501,10 +1497,7 @@ functionsleep(milliseconds) {
 
     } while (currentDate-date<milliseconds);
 
-    }
-``
-This is a sleep function because js does not have 1 built in lol
-``javascript
+    }``This is a sleep function because js does not have 1 built in lol``javascript
 functionspeak(text) {
 
     varmsg=newSpeechSynthesisUtterance();
@@ -1560,9 +1553,7 @@ constapp=express()
 varMongoClient=require('mongodb').MongoClient;
 
 varurl="mongodb://127.0.0.1:27017/";
-``
-Here we are calling the needed libs
-``javascript
+``Here we are calling the needed libs``javascript
 client.on('connectFailed',function(error) {
 
     console.log('Connect Error: '+error.toString());
@@ -1600,9 +1591,7 @@ client.on('connect',function(connection) {
 client.connect('ws://192.168.1.10:81');
 
 console.log("HERE!")
-``
-Here we have all the handlers and here we are connecting to the glove
-``javascript
+``Here we have all the handlers and here we are connecting to the glove``javascript
 // Express static webserserver
 
 constpublicDirectoryPath=path.join(__dirname,'data')
@@ -1624,9 +1613,7 @@ app.get('/lastseen', (req,res) => {
   res.send(finduserList())
 
 })
-``
-Here we are declaring the APIs for the recall of data
-``javascript
+``Here we are declaring the APIs for the recall of data``javascript
 app.listen(3000, () => {
 
   console.log("Server has started!")
