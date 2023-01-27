@@ -588,14 +588,7 @@ While in the Bootcamp i achevied some extra milestones on the way whiche are com
 
 hackomation is where my journey all begann.
 
-my project Visionary hands started there with only 1 teammate at the beginning through the competition we had 2 extra members in our team but they flaked off after some time. in this competition we sadly did not get a spot in the top 3 but it was a fun and eye opening experience
-
-![](Hackom.jpeg)
-
-
-![](hackom.jpeg)
-
-![](hackomWorking.jpg)
+my project Visionary hands started there with only 1 teammate at the beginning through the competition we had 2 extra members in our team but they flaked off after some time. in this competition we sadly did not 
 
 ### Whats Your Tallent 2022
 
