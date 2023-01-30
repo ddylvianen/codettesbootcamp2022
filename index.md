@@ -91,7 +91,7 @@ Ohh yeah almost forgot i made a separate library for the flex sensor to not make
 Okay that's enough about the small introduction about the code let's get into it
 
 This sets the pins of each flex sensor
-``cpp fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5); ``
+` fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5); `
 This calibrates the highest and lowest flex sensor output for the constraints of the outputs
 ``cpp
 while(millis()<privtime+times)
