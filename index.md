@@ -91,9 +91,9 @@ Ohh yeah almost forgot i made a separate library for the flex sensor to not make
 Okay that's enough about the small introduction about the code let's get into it
 
 This sets the pins of each flex sensor
-``c++ fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5); ``
+``cpp fl.intelise_output(Flex_pin1, Flex_pin2, Flex_pin3, Flex_pin4, Flex_pin5); ``
 This calibrates the highest and lowest flex sensor output for the constraints of the outputs
-``c++
+``cpp
 while(millis()<privtime+times)
 
 {
@@ -208,14 +208,16 @@ floatFlexgrade4=readconstrainmapflex(Flex_pin4,flexADC4,sensorMin4,sensorMax4);
 floatFlexgrade5=readconstrainmapflex(Flex_pin5,flexADC5,sensorMin5,sensorMax5);
 
 Here is a example of one of the if statements
-``c++
+``cpp
 if(((Flexgrade1>=25)&&(Flexgrade1<=42))&&((Flexgrade2>=40)&&(Flexgrade2<=60))&&((Flexgrade3>=40)&&(Flexgrade3<=60))&&((Flexgrade4>=35)&&(Flexgrade4<=60))&&(Flexgrade5==90))
 
 {
 
 Serial.print("A");
 }
-``Here is the first way i tried to minimise the spam of reading the letters but that would not work good if you need the same letter after each other``c++
+``
+Here is the first way i tried to minimise the spam of reading the letters but that would not work good if you need the same letter after each other
+``cpp
 voidprintletter(charread_letter)
 
 {
@@ -319,9 +321,12 @@ The js code is the same for both to here is a quick sum of that
 ``javascript
 vartextonread;
 
-constws=newWebSocket("ws://192.168.1.17:81");//"ws://192.168.4.1:81");connect to another espon websocket too. (the one where il be sending he messages)
-
-vart=0;``Here we connect to the ws connection made on the esp32``javascript
+constws=newWebSocket("ws://192.168.1.17:81");  //"ws://192.168.4.1:81");
+//connect to another espon websocket too. (the one where il be sending he messages)
+vart=0;
+``
+Here we connect to the ws connection made on the esp32
+``javascript
 ws.onopen=function () {
 
 alert("Connection opened");
@@ -334,7 +339,9 @@ ws.onclose=function () {
 
 alert("Connection closed");
 
-};``Here are sum simple on open and onclose add handlers``javascript
+};``
+Here are sum simple on open and onclose add handlers
+``javascript
 ws.onmessage=function (event) {
 
 vartext=event.data
@@ -367,7 +374,10 @@ console.log(text)
 
 }
 
-};``Where when a message comes in from the glove via websockets the message gets processed and if its a empty space the text to speech gets called and after 3 sec the text box gets cleared``javascript
+};``
+Where when a message comes in from the glove via websockets the message gets processed and if its a empty space the text to speech gets called and after 3 sec the text box gets cleared
+``javascript
+
 functionsettings() {
 
 if (t==1) {
@@ -386,7 +396,11 @@ t=1
 
 }
 
-}``Here there is a toggle for the settings button``javascript
+}
+``
+Here there is a toggle for the settings button
+``javascript
+
 functionsleep(milliseconds) {
 
 constdate=Date.now();
@@ -399,7 +413,11 @@ currentDate=Date.now();
 
 } while (currentDate-date<milliseconds);
 
-}``This is a sleep function because js does not have 1 built in lol``javascript
+}
+``
+This is a sleep function because js does not have 1 built in lol
+``javascript
+
 functionspeak(text) {
 
 varmsg=newSpeechSynthesisUtterance();
@@ -454,7 +472,9 @@ constapp=express()
 varMongoClient=require('mongodb').MongoClient;
 
 varurl="mongodb://127.0.0.1:27017/";
-``Here we are calling the needed libs``javascript
+``
+Here we are calling the needed libs
+``javascript
 client.on('connectFailed',function(error) {
 
 console.log('Connect Error: '+error.toString());
@@ -490,7 +510,9 @@ console.log(data["letter"]);
 client.connect('ws://192.168.1.10:81');
 
 console.log("HERE!")
-``Here we have all the handlers and here we are connecting to the glove``javascript
+``
+Here we have all the handlers and here we are connecting to the glove
+``javascript
 // Express static webserserver
 
 constpublicDirectoryPath=path.join(__dirname,'data')
@@ -512,7 +534,9 @@ app.get('/lastseen', (req,res) => {
 res.send(finduserList())
 
 })
-``Here we are declaring the APIs for the recall of data``javascript
+``
+Here we are declaring the APIs for the recall of data
+``javascript
 app.listen(3000, () => {
 
 console.log("Server has started!")
@@ -682,10 +706,10 @@ A ping is a signal that is send by every user and when other users receive the p
 
 This lets the chat app only connect when a button is pressed and not on startup
 
-```javascript
+``javascript
 app = {
 connection: function () {
-```
+``
 
 sendMsg and sendmessage does the same thing
 
@@ -693,7 +717,7 @@ When they are called they get the username from the html page and publish the me
 
 If a message comes in it will be filtered for pings and pongs and if there is non of both it is displayed in the chatlog on the html page
 
-```javascript
+``javascript
 function sendMsg(ele) {
   if (event.key === 'Enter' && toggle == 0) {
     var USER = document.getElementById('login').value;
@@ -717,11 +741,11 @@ function sendMsg(ele) {
     // sendPing();
   }
 }
-```
+``
 
 This handels all the pongs that the users send and extracts the username and the clientId
 
-```javascript
+``javascript
 app = {
     client.on('message', function (topic, message, packet) {
       if (toggle == 0) {
@@ -740,8 +764,7 @@ app = {
         }
       }
     })
-
-```
+``
 
 Here the userlist is updated if there if a new user that is not yet in the list
 
@@ -779,7 +802,7 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It m
 
 If a message comes in this will check if its a ping(a call out for all online users), a pong( the answer to a pong with the name of the person in it)
 
-```javascript
+``javascript
 try {
     msgObj = JSON.parse(message.toString());
  
@@ -791,11 +814,11 @@ try {
     if (Object.keys(msgObj)[0] == "pong") {
       handlePong(msgObj.pong);
     }; // pong value is an object!!
-```
+``
 
 The for loop checks if there is a : is the message that will help is separate the name of the user and the message from each other
 
-```javascript
+``javascript
  for (var i = 0; i < lengt; i++) {
       if (incomming[i] == ":") {
         var com = i;
@@ -805,39 +828,39 @@ The for loop checks if there is a : is the message that will help is separate th
         console.log(i);
       }
     }
-```
+``
 
 The substr function removes a little peace out of a large string this helps us get only the username in the variable name and only the message in the variable name
 
-```javascript
+``javascript
 var name = incomming.substr(0,place_name);
 var inmessage = incomming.substr(place_inmes,lengt);
-```
+``
 
 If the message is a welcome message it will be stored under a login key and send to be saved in a collection for login messages
 
-```javascript
+``javascript
 if (inmessage == incomming) {
         var myobj = {  login: inmessage, time: Date() };
         var collection = "login";
       }
-```
+``
 
 If the message is not a welcome message the username, message and the time it was send will be stored under there separate keys and send to be saved in a collection for user messages
 
-```javascript
+``javascript
 else{
   varmyobj= { name:name, message:inmessage, time:Date()};
   varcollection="messages";
     }
-```
+``
 
 This hosts the chatapp so when someone goes to the link this will serve up the html page and everything it needs
 
-```javascript
+``javascript
 constpublicDirectoryPath=path.join(__dirname,'data')
 app.use('/',express.static(publicDirectoryPath))
-```
+``
 
 #### The final moment
 
